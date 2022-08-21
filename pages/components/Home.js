@@ -1,12 +1,18 @@
 // Modules
 import { Button } from "react-bootstrap";
-import Image from "next/image";
 import { BsCloudDownload } from "react-icons/bs";
+import Image from "next/image";
+import Head from "next/head";
 
+// Styles
 import Styles from "./../../styles/Home.module.css";
 
 // Image
 import coderCompletedTask from "../../assets/images/coder-completed-task.jpg";
+
+const downloadCV = () => {
+  window.open("/CV.pdf");
+};
 
 const Home = () => {
   return (
@@ -34,20 +40,41 @@ const Home = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <div className={`${Styles.HomeContainer} p-5 pt-5 mt-2`}>
         {/* Left */}
         <div>
           {/* text */}
-          <div>👋 Hola, soy matias quiroga</div>
+          <h6 className={Styles.Subtitle}>
+            <span className={Styles.Hand}>👋</span>
+            <span >HOLA, SOY</span>
+            <span className={Styles.Strong}>MATIAS QUIROGA</span>
+          </h6>
           {/* title */}
-          <h2>Desarrollador Web</h2>
-          <Button variant="primary" className={Styles.Button}>
+          <h1 className={Styles.Title}>Desarrollador Web</h1>
+          <hr className={Styles.Hr} />
+          <Button
+            variant="primary"
+            className={Styles.Button}
+            onClick={() => {
+              downloadCV();
+            }}
+          >
             <BsCloudDownload /> Descargar cv
           </Button>
         </div>
         {/* right */}
-        <div>
+        <div className={Styles.ImageConatiner}>
           {/* image */}
-          <Image src={coderCompletedTask} width={250} height={250} alt="logo" />
+          <Image
+            src={coderCompletedTask}
+            width={450}
+            height={450}
+            alt="logo"
+            priority
+            placeholder="blur"
+            quality={100}
+            loading="eager"
+          />
         </div>
       </div>
     </>

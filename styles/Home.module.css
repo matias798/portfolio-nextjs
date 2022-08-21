@@ -1,14 +1,61 @@
 .HomeContainer {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 70vh;
+}
+.Title {
+    font-size: 4.69em;
+    font-weight: bold;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+.Subtitle{
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing:3PX;
 
 }
-.Button{
-    background-color:#CA70E9;
-    border: none;
+.Hand{
+    font-size: 2em;
+    padding-right: 0.5em;
+
 }
-.Button:hover{
+
+.Strong{
+    font-weight: bold;
+    padding-left: 0.4em;
+}
+
+.Hr{
+    width: 2em!important;
+    border: 0.5px solid #000;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+.Button {
+    background-color: #CA70E9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 4px 2px;
+    cursor: pointer;
+
+
+}
+
+.Button:hover {
     background-color: #AE5DD7;
+}
+
+.ImageConatiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AE5DD7;
+
 }
