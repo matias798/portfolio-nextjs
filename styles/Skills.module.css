@@ -1,0 +1,63 @@
+.Container {
+  width: 100%;
+  height: 100vh;
+}
+
+.SkillsContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.SkillsContainerTitle {
+  padding-bottom: 0.5em;
+}
+
+.Column {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-right: 3.5px solid #D9DBE9;
+  width: 30%;
+  height: 70%;
+  text-align: center;
+
+}
+
+.Icon {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.Design {
+  background-color: #ffebf4;
+  color: #ffafcc;
+  width: 14%;
+  height: 14%;
+  padding: 0.8em;
+  border-radius: 10px;
+}
+
+.Frontend {
+  background-color: #bde0fe;
+  color: #51abff;
+  width: 14%;
+  height: 14%;
+  padding: 0.8em;
+  border-radius: 10px;
+}
+
+.Backend {
+  background-color: #e6daed;
+  color: #ce5fe8;
+  width: 14%;
+  height: 14%;
+  padding: 0.8em;
+  border-radius: 10px;
+}
