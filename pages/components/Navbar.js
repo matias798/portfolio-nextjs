@@ -15,16 +15,13 @@ function NavScrollExample() {
   const [padding, setPadding] = useState(30);
   const [boxShadow, setBoxShadow] = useState(0);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
-
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
   };
 
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
     let backgroundTransparacyVar = clientWindowHeight / 600;
 
     if (backgroundTransparacyVar < 1) {
