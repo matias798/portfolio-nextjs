@@ -21,7 +21,7 @@ function NavScrollExample() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    () => window.removeEventListener("scroll", handleScroll);
     let backgroundTransparacyVar = clientWindowHeight / 600;
 
     if (backgroundTransparacyVar < 1) {
@@ -43,11 +43,12 @@ function NavScrollExample() {
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
       }}
     >
+      {console.log(backgroundTransparacy)}
       <Container fluid>
         <Navbar.Brand href="#" className="m-0 p-0">
-          <div>
+          <div className={Styles.SvgContainer}>
             <svg
-              height={`68px`}
+              height={`${backgroundTransparacy > 55 ? "95px" : "55px"}`}
               viewBox="0 80 280 165.3969818068095"
               className="css-1j8o68f m-0 p-0"
             >
