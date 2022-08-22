@@ -2,14 +2,21 @@
     z-index: 10;
     position: sticky;
     top: 0;
-    background-color: #ffffff ;
+    background-color: #ffffff;
+}
+
+.SvgContainer {
+    display: flex;
+    align-content: center;
+    margin-left: 0.7em;
+
 }
 
 .navItem {
     color: #AE5DD7;
     font-size: 1.3em;
     text-align: center;
-    padding-left: 1em!important;
+    padding-left: 1em !important;
 
 }
 
