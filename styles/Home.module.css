@@ -1,38 +1,52 @@
 .HomeContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 70vh;
+    justify-content: space-around;
+    height: 85vh;
+    padding-left: 3em;
+    padding-top: 3.5em;
 }
+
+.Left {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    height: 85vh;
+}
+
 .Title {
-    font-size: 4.69em;
+    font-size: 4.3em;
     font-weight: bold;
     margin-bottom: 0;
     letter-spacing: -1px;
 }
-.Subtitle{
+
+.Subtitle {
     font-size: 1em;
     font-weight: 400;
-    letter-spacing:3PX;
+    letter-spacing: 3PX;
+    margin-top: 10px;
+
 
 }
-.Hand{
+
+.Hand {
     font-size: 2em;
     padding-right: 0.5em;
 
 }
 
-.Strong{
+.Strong {
     font-weight: bold;
     padding-left: 0.4em;
 }
 
-.Hr{
-    width: 2em!important;
+.Hr {
+    width: 3em !important;
     border: 0.5px solid #000;
     margin-top: 0;
     margin-bottom: 2em;
 }
+
 .Button {
     background-color: #CA70E9;
     border: none;
@@ -44,18 +58,15 @@
     font-size: 1.5em;
     margin: 4px 2px;
     cursor: pointer;
-
-
 }
 
 .Button:hover {
     background-color: #AE5DD7;
 }
 
-.ImageConatiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #AE5DD7;
-
+.ImageContainer {
+    margin-top: -50px;
+    width: 55%;
+    padding: 5em;
+    padding-top: 0;
 }
