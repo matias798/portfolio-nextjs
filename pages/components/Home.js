@@ -40,17 +40,20 @@ const Home = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <div className={`${Styles.HomeContainer} p-5 pt-5 mt-2`}>
+      <div className={`${Styles.HomeContainer}`}>
         {/* Left */}
-        <div>
+        <div className={Styles.Left}>
           {/* text */}
           <h6 className={Styles.Subtitle}>
             <span className={Styles.Hand}>👋</span>
-            <span >HOLA, SOY</span>
+            <span>HOLA, MI NOMBRE ES</span>
             <span className={Styles.Strong}>MATIAS QUIROGA</span>
           </h6>
           {/* title */}
-          <h1 className={Styles.Title}>Desarrollador Web</h1>
+          <h1 className={Styles.Title}>
+            {" "}
+             Desarrollador Web independiente{" "}
+          </h1>
           <hr className={Styles.Hr} />
           <Button
             variant="primary"
@@ -63,12 +66,10 @@ const Home = () => {
           </Button>
         </div>
         {/* right */}
-        <div className={Styles.ImageConatiner}>
+        <div className={Styles.ImageContainer}>
           {/* image */}
           <Image
             src={coderCompletedTask}
-            width={450}
-            height={450}
             alt="logo"
             priority
             placeholder="blur"
