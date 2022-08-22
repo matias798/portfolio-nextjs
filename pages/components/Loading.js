@@ -96,8 +96,8 @@ const LoadingComponent = () => {
             </g>
           </svg>
         </div>
-        <h2 className={`${Styles.ml13} move mt-2`}>Matias quiroga</h2>
-        <h2 className={`${Styles.ml13} move2`}> Desarrollador Web</h2>
+        <h1 className={`${Styles.ml13} move mt-2`}>Matias quiroga</h1>
+        <h1 className={`${Styles.ml13} move2`}> Desarrollador Web</h1>
       </span>
     </div>
   );
