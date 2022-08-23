@@ -2,16 +2,16 @@ import Styles from "../../styles/Experience.module.css";
 
 const ExperienceItems = [
   {
-    title: "Lorem ipsum",
-    workedAt: "Lorem ipsum",
+    title: "Desarrollador  Full Stack",
+    workedAt: "Modo Agrario",
     date: "2020-2022",
     place: "Remoto",
   },
   {
-    title: "Lorem ipsum",
+    title: "Desarrollador  Full Stack",
+    workedAt: "Cobranzas Argentina",
     date: "2020-2022",
     place: "Remoto",
-    workedAt: "Lorem ipsum",
   },
   {
     title: "Lorem ipsum",
@@ -27,13 +27,12 @@ const ExperienceItems = [
   },
 ];
 
-
-
 const Experience = () => {
   return (
     <div className={Styles.Bg}>
-      <h2 className={Styles.Title}>Experiencia</h2>
-      <hr className={Styles.Line}></hr>
+      <div>
+        <h2 className={Styles.Title}>Experiencia</h2>
+      </div>
       <div className={Styles.Container}>
         {ExperienceItems.map((item) => {
           return (
