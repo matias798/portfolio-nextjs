@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 const Contact = () => {
   return (
-    <div className={Styles.Bg}>
+    <div className={Styles.Bg} id='Contact'>
       <div className={`container ${Styles.Container}`}>
         <h2 className="pb-3 text-center"> Hablemos</h2>
 
