@@ -51,9 +51,9 @@ const LoadingComponent = () => {
       <span>
         <div className="d-flex justify-content-center">
           <svg
-            width="275.45520665327433"
+            width="275"
             height="100"
-            viewBox="0 0 450 265.3969818068095"
+            viewBox="0 0 275 275"
             className="css-1j8o68f"
             id="line-drawing-demo"
           >
@@ -96,8 +96,8 @@ const LoadingComponent = () => {
             </g>
           </svg>
         </div>
-        <h1 className={`${Styles.ml13} move mt-2`}>Matias quiroga</h1>
-        <h1 className={`${Styles.ml13} move2`}> Desarrollador Web</h1>
+        <h1 className={`${Styles.Title} move mt-2`}>Matias Quiroga</h1>
+        <h1 className={`${Styles.Title} move2`}> Desarrollador Web</h1>
       </span>
     </div>
   );
