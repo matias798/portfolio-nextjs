@@ -23,3 +23,10 @@
 .navItem:hover {
     color: #CDB4DB;
 }
+
+@media (max-width: 769px) {
+    .stickyNav {
+        background-color: #ffffff !important;
+
+    }
+}
