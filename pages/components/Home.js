@@ -16,7 +16,7 @@ const downloadCV = () => {
 
 const Home = () => {
   return (
-    <>
+    <div id="Home">
       <Head>
         <title>Matias quiroga</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -50,10 +50,7 @@ const Home = () => {
             <span className={Styles.Strong}>MATIAS QUIROGA</span>
           </h6>
           {/* title */}
-          <h1 className={Styles.Title}>
-            {" "}
-             Desarrollador Web independiente{" "}
-          </h1>
+          <h1 className={Styles.Title}> Desarrollador Web independiente </h1>
           <hr className={Styles.Hr} />
           <Button
             variant="primary"
@@ -78,7 +75,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
