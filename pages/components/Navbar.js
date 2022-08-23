@@ -42,13 +42,13 @@ function NavScrollExample() {
         padding: `${padding}px 0px`,
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
       }}
+      href="#Home"
     >
-      {console.log(backgroundTransparacy)}
       <Container fluid>
-        <Navbar.Brand href="#" className="m-0 p-0">
+        <Navbar.Brand href="#Home" className="m-0 p-0">
           <div className={Styles.SvgContainer}>
             <svg
-              height={`${backgroundTransparacy > 55 ? "95px" : "55px"}`}
+              height="45px"
               viewBox="0 80 280 165.3969818068095"
               className="css-1j8o68f m-0 p-0"
             >
@@ -104,20 +104,34 @@ function NavScrollExample() {
           ></Nav>
           <Nav className="justify-content-end" activeKey="/home">
             <Nav.Item>
-              <Nav.Link className={Styles.navItem}>Inicio</Nav.Link>
+              <Nav.Link className={Styles.navItem} href="#Home">
+                Inicio
+              </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className={Styles.navItem} eventKey="link-1">
+              <Nav.Link
+                className={Styles.navItem}
+                href="#About"
+                eventKey="link-1"
+              >
                 About
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className={Styles.navItem} eventKey="link-2">
+              <Nav.Link
+                className={Styles.navItem}
+                href="#Skills"
+                eventKey="link-2"
+              >
                 Conocimientos
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link className={Styles.navItem} eventKey="link-2">
+              <Nav.Link
+                className={Styles.navItem}
+                href="#Contact"
+                eventKey="link-2"
+              >
                 Contacto
               </Nav.Link>
             </Nav.Item>
