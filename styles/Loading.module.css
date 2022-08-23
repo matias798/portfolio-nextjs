@@ -8,9 +8,7 @@
   z-index: 9999;
 }
 
-
-
-.ml13 {
+.Title {
   font-size: 1.9em;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -18,7 +16,14 @@
   text-align: center;
 }
 
-.ml13 .letter {
+.Title .letter {
   display: inline-block;
   line-height: 1em;
+}
+
+
+@media (max-width: 769px) {
+  .Title {
+    font-size: 1em;
+  }
 }
