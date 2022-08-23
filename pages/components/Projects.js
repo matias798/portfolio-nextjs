@@ -1,6 +1,8 @@
 // Modules
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import coderCompletedTask from "../../assets/images/coder-focused.jpg";
+import rameDeco from "../../assets/images/rameDeco.png";
+import Glamira from "../../assets/images/glamira.png";
+import Cobranzas from "../../assets/images/Cobranzas.png";
+
 import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -10,41 +12,49 @@ import Styles from "../../styles/Project.module.css";
 import "swiper/css";
 
 const projects = [
-  { image: coderCompletedTask, color: "#FFEBF4" },
-  { image: coderCompletedTask, color: "#F2EEFF" },
-  { image: coderCompletedTask, color: "#FFCDE0" },
+  {
+    title: "Cobranzas Argentina",
+    subtitle:
+      "Sistema el cual utilizando un archivo csv con los datos de los clientes se envia un mensaje y un pdf predefinido.",
+    image: Cobranzas,
+    color: "#FFEBF4",
+  },
+  {
+    title: "Glamira",
+    subtitle:
+      "Ecommerce enfocado en la venta de ropa y joyeria para hombres y mujeres realizado de forma individual",
+    image: Glamira,
+    color: "#F2EEFF",
+  },
+  {
+    title: "Rame Deco",
+    subtitle:
+      "Ecommerce enfocado en la venta de productos de decoración realizado de forma conjunta en Digital House",
+    image: rameDeco,
+    color: "#e6daed",
+  },
 ];
 
 const Projects = () => {
   return (
     <div className={Styles.Bg}>
-      <h3 className="text-center ">Consulta mi Portafolio</h3>
-
-      {/* buttons */}
-      <div className="d-flex justify-content-end container">
-        <div className={Styles.roundedButton}>
-          <AiOutlineLeft size={15} />
-        </div>
-        <div className={Styles.roundedButton}>
-          <AiOutlineRight size={15} />
-        </div>
-      </div>
+      <h2 className="text-center py-2">Portafolio</h2>
 
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
         autoplay={{
-          disableOnInteraction: false,
+          disableOnInteraction: true,
           pauseOnMouseEnter: true,
+          delay:3500
         }}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
         spaceBetween={50}
         slidesPerView={2}
         className="container"
       >
-        {projects.map((product) => (
+        {projects.map((item) => (
           <SwiperSlide
             key={Math.random()}
             style={{ cursor: "pointer" }}
@@ -53,18 +63,19 @@ const Projects = () => {
             {/* image */}
             <div
               className={Styles.Image}
-              style={{ backgroundColor: product.color }}
+              style={{ backgroundColor: item.color }}
             >
               <Image
-                src={coderCompletedTask}
-                alt="s"
+                src={item.image}
+                alt={item.title}
                 width={400}
                 height={200}
                 className={Styles.Image}
+                placeholder="blur"
               />
             </div>
-            <h4 className="mt-2">Lorem KIpsim </h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h3 className="mt-2">{item.title}</h3>
+            <p className={Styles.Subtitle}>{item.subtitle}</p>
           </SwiperSlide>
         ))}
       </Swiper>
