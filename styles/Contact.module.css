@@ -1,14 +1,12 @@
 .Bg {
     background-color: #DEF0FF;
-    width: 100%;
-    height: 95vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Title {
-    padding: 2em;
     padding-bottom: 0em;
 }
 
