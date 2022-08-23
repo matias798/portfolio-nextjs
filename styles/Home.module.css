@@ -14,10 +14,11 @@
 }
 
 .Title {
-    font-size: 4.3em;
+    font-size: 4.6em;
     font-weight: bold;
     margin-bottom: 0;
     letter-spacing: -1px;
+    color: rgb(46, 45, 45);
 }
 
 .Subtitle {
@@ -25,19 +26,17 @@
     font-weight: 400;
     letter-spacing: 3PX;
     margin-top: 10px;
-
-
+    color: #606060;
 }
 
 .Hand {
     font-size: 2em;
-    padding-right: 0.5em;
-
 }
 
 .Strong {
     font-weight: bold;
     padding-left: 0.4em;
+    color: rgb(46, 45, 45);
 }
 
 .Hr {
