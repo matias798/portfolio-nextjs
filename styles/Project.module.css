@@ -1,5 +1,5 @@
 .Bg {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,4 +30,9 @@
     margin-bottom: 1em;
     width: 2.2em;
     height: 2.2em;
+}
+
+.Subtitle {
+    font-size: 1em;
+    letter-spacing: 1px;
 }
