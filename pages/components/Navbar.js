@@ -9,8 +9,8 @@ import Styles from "./../../styles/Navbar.module.css";
 import { useEffect, useState } from "react";
 
 function NavScrollExample() {
+  
   const [clientWindowHeight, setClientWindowHeight] = useState("");
-
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
   const [padding, setPadding] = useState(30);
   const [boxShadow, setBoxShadow] = useState(0);
@@ -37,12 +37,12 @@ function NavScrollExample() {
     <Navbar
       expand="lg"
       className={`${Styles.stickyNav} navbar navbar-expand-lg navbar-light fixed-top p-2 pt-3`}
+      collapseOnSelect
       style={{
         background: `rgba(255, 255, 255, ${backgroundTransparacy})`,
         padding: `${padding}px 0px`,
         boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
       }}
-      href="#Home"
     >
       <Container fluid>
         <Navbar.Brand href="#Home" className="m-0 p-0">
