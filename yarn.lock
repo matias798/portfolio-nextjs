@@ -1757,6 +1757,11 @@
   "resolved" "https://registry.npmjs.org/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz"
   "version" "1.0.0"
 
+"sweetalert2@^11.4.29":
+  "integrity" "sha512-UMCZgyEk0m+KizxspB8Bsm5ZQRdguba2t2+Rf0r8XBmq5YqhXq7ItV2C15A3VLfRlxHnEJBTYg6hkSk/x+5Ofw=="
+  "resolved" "https://registry.npmjs.org/sweetalert2/-/sweetalert2-11.4.29.tgz"
+  "version" "11.4.29"
+
 "swiper@^8.3.2":
   "integrity" "sha512-8wsC7ORYvVSnLUoxs2+xmfLrDPNjBVQXMCFbOlqtHeON6wtu/blOyySDr8TCBCdse1bdcIbn7m8xJNxVFL8o4Q=="
   "resolved" "https://registry.npmjs.org/swiper/-/swiper-8.3.2.tgz"
