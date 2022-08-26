@@ -7,9 +7,8 @@ import Styles from "../../styles/Skills.module.css";
 
 const Skills = () => {
   return (
-    <div className={Styles.Container}>
-      <h2 className="text-center py-5">Conocimientos</h2>
-
+    <div className={Styles.Container} id="Skills">
+      <h2 className="text-center">Conocimientos</h2>
       {/* Skilss */}
       <div className={Styles.SkillsContainer}>
         {/* Design */}
@@ -18,20 +17,16 @@ const Skills = () => {
           <div className={Styles.Icon}>
             <RiPencilRuler2Line className={Styles.Design} />
           </div>
-
           {/* Title */}
-          <h6 className='py-4 pb-2'>Diseño y mas</h6>
-
+          <h3 className={Styles.Subtitle}>Diseño </h3>
           {/* Text */}
-          <p>Fundamentos en Ux & UI </p>
-          <p>Diseño de navegación</p>
-          <p>Diseño de typografia</p>
-          <p>Metodologías Ágiles</p>
-          <p>Diseño de color</p>
-          <p>Jest</p>
-          <p>Figma</p>
-          <p>Jira </p>
-
+          <div>
+            <div className={Styles.Text}>Fundamentos en UX & UI </div>
+            <div className={Styles.Text}>Figma</div>
+            <div className={Styles.Text}>Navegación</div>
+            <div className={Styles.Text}>Typografia</div>
+            <div className={Styles.Text}>Color</div>
+          </div>
         </div>
         {/* Frontend */}
         <div className={Styles.Column}>
@@ -41,19 +36,16 @@ const Skills = () => {
           </div>
 
           {/* Title */}
-          <h6 className='py-4 pb-2'>Frontend</h6>
+          <h3 className={Styles.Subtitle}>Frontend</h3>
 
           {/* Text */}
-          <p>Typescript</p>
-          <p>Css / Sass</p>
-          <p>Material ui</p>
-          <p>React.js</p>
-          <p>Bootstrap</p>
-          <p>Next.js</p>
-          <p>Html / Ejs</p>
-          <p>Redux</p>
+          <div className={Styles.Text}>Material ui / Bootstrap</div>
+          <div className={Styles.Text}>Typescript</div>
+          <div className={Styles.Text}>Css / Sass</div>
+          <div className={Styles.Text}>React.js </div>
+          <div className={Styles.Text}>Next.js</div>
+          <div className={Styles.Text}>Redux</div>
         </div>
-
         {/* Backend */}
         <div className={Styles.Column} style={{ border: "none" }}>
           {/* icon */}
@@ -62,18 +54,14 @@ const Skills = () => {
           </div>
 
           {/* Title */}
-          <h6 className='py-4 pb-2'>Backend</h6>
+          <h3 className={Styles.Subtitle}>Backend</h3>
 
           {/* Text */}
-          <p>Mongodb</p>
-          <p>REST API</p>
-          <p>Node.js</p>
-          <p>Express</p>
-          <p>JWT</p>
-          <p>MVC</p>
-          <p>Docker</p>
-          <p>Git</p>
-          <p>MySql</p>
+          <div className={Styles.Text}>Mongodb</div>
+          <div className={Styles.Text}>Node.js</div>
+          <div className={Styles.Text}>Express</div>
+          <div className={Styles.Text}>Docker </div>
+          <div className={Styles.Text}>MySql</div>
         </div>
       </div>
     </div>
