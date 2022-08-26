@@ -1,43 +1,59 @@
+// Styles
 import Styles from "../../styles/Contact.module.css";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
+
+// Module export
+import { Button } from "react-bootstrap";
+import Swal from "sweetalert2";
+
 const Contact = () => {
+  const emailHandler = (e) => {
+    window.open(
+      "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasquiroga584@gmail.com"
+    );
+    Swal.fire({
+      text: "Gracias por contactarme, me pondré en contacto contigo a la brevedad.",
+      icon: "success",
+      confirmButtonText: "Ok",
+    });
+  };
   return (
-    <div className={Styles.Bg} id='Contact'>
-      <div className={`container ${Styles.Container}`}>
-        <h2 className="pb-3 text-center"> Hablemos</h2>
+    <div id="Contact">
+      <div className={Styles.Bg}>
+        <h2 className={Styles.Title}>¿Necesitas una pagina web?</h2>
 
-        <Form>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Control
-              className={Styles.FormControl}
-              type="text"
-              placeholder="Nombre"
-              required
-            />
-          </Form.Group>
+        {/* Buttons */}
+        <div className="d-flex justify-content-center">
+          <Button variant="primary" className={Styles.Button}>
+            <span
+              className={Styles.ButtonText}
+              onClick={() => {
+                // Copy text to clipboard
+                var textArea = document.createElement("textarea");
+                textArea.value = "93415638192";
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                textArea.remove();
 
-          <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Control
-              className={Styles.FormControl}
-              type="email"
-              placeholder="Email"
-              required
-            />
-          </Form.Group>
-
-          <Form.Control
-            as="textarea"
-            rows={3}
-            className={Styles.FormControl}
-            style={{ height: "100px" }}
-            placeholder="Envia tu mensaje"
-            required
-          />
-          <Button variant="primary" type="submit" className={Styles.Button}>
-            Enviar
+                Swal.fire({
+                  title: "¡Copiado!",
+                  text: "Se ha copiado el numero a tu portapapeles",
+                });
+              }}
+            >
+              LLamame
+            </span>
           </Button>
-        </Form>
+          <Button
+            variant="outline-primary"
+            className={Styles.SecondaryButton}
+            onClick={() => {
+              emailHandler();
+            }}
+          >
+            <span className={Styles.ButtonText}>Enviame un mail</span>
+          </Button>
+        </div>
       </div>
     </div>
   );
