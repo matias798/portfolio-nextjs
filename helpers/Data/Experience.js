@@ -1,4 +1,4 @@
- const ExperienceItems = [
+export const ExperienceItems = [
   {
     title: "Desarrollador  Full Stack",
     workedAt: "Modo Agrario",
@@ -24,5 +24,3 @@
     workedAt: "Lorem ipsum",
   },
 ];
-
-export default ExperienceItems;
