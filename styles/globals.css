@@ -1,4 +1,4 @@
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
   font-family: "MrEaves";
   src: url('./../assets/fonts/MrEavesXLModNarOT-Reg.ttf');
   font-weight: normal;
@@ -9,7 +9,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: MrEaves, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Nunito', sans-serif !important;
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
@@ -28,7 +28,7 @@ a {
   }
 
   body {
-    color: #000000;
+    color: #FFFFFF;
     background: #FFFFFF;
   }
 }
