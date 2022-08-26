@@ -1,44 +1,168 @@
 .Bg {
-    background-color: #DEF0FF;
-    height: 75vh;
+    background-color: #F2EEFF;
+    height: 60vh;
     display: flex;
+    flex-direction: column;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+
+}
+
+.ButtonText {
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .Title {
-    padding-bottom: 0em;
-}
-
-.FormControl {
-    width: 100%;
-    height: 3.5em;
-    border-radius: 15px;
-    border: none;
-    background-color: #FFFFFF;
-    font-size: 1em;
+    text-align: center;
+    font-size: 3rem;
     font-weight: bold;
-    color: #000000;
-    text-align: flex-start;
-    padding: 1em;
+    margin-bottom: 0.5em;
 }
 
 .Button {
-    width: 100%;
-    height: 3.6em;
-    border-radius: 40px;
+    background-color: #8155BA;
     border: none;
-    background-color: #D9DBE9;
-    color: #3C3C3E;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
+    border-radius: 2px;
+    width: 12em;
+    height: 3em;
+    margin-right: 1em;
 }
 
 .Button:hover {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: #6f4db8;
+}
 
+
+.SecondaryButton {
+    background: #FFFFFF;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    width: 12em;
+    height: 3em;
+    margin-right: 1em;
+
+}
+
+.SecondaryButton::selection{
+    background: red!important;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    width: 12em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.SecondaryButton:hover {
+    background: #FFFFFF;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    border-radius: 2px;
+    width: 12em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.SecondaryButton span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.SecondaryButton:before,
+.SecondaryButton:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.SecondaryButton:before {
+    height: 0%;
+    width: 2px;
+}
+
+.SecondaryButton:after {
+    width: 0%;
+    height: 2px;
+}
+
+.SecondaryButton:hover {
+    background: transparent;
+    box-shadow: none;
+}
+
+.SecondaryButton:hover:before {
+    height: 100%;
+}
+
+.SecondaryButton:hover:after {
+    width: 100%;
+}
+
+.SecondaryButton span:hover {
+    color: #8155BA;
+}
+
+.SecondaryButton span:before,
+.SecondaryButton span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: #8155BA;
+    transition: all 0.3s ease;
+}
+
+.SecondaryButton span:before {
+    width: 2px;
+    height: 0%;
+}
+
+.SecondaryButton span:after {
+    width: 0%;
+    height: 2px;
+}
+
+.SecondaryButton span:hover:before {
+    height: 100%;
+}
+
+.SecondaryButton span:hover:after {
+    width: 100%;
+}
+
+
+
+.SecondaryButton {
+    background-color: #FFFFFF;
+    border: 1px solid #8155BA;
+    border-radius: 2px;
+    color: #8155BA;
+    width: 12em;
+    height: 3em;
+}
+
+
+.FooterContainer {
+    background-color: #F2EEFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    border: 4px solid 000000;
+}
+
+.Hr {
+    border: 4px solid 000000;
 }
