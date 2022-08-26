@@ -10,10 +10,6 @@ import Styles from "./../../styles/Home.module.css";
 // Image
 import coderCompletedTask from "../../assets/images/coder-completed-task.jpg";
 
-const downloadCV = () => {
-  window.open("/CV.pdf");
-};
-
 const Home = () => {
   return (
     <div id="Home">
@@ -47,20 +43,18 @@ const Home = () => {
           <h6 className={Styles.Subtitle}>
             <span className={Styles.Hand}>👋</span>
             <span>HOLA, MI NOMBRE ES</span>
-            <span className={Styles.Strong}>MATIAS QUIROGA</span>
+            <span className={Styles.Strong}>MATÍAS</span>
           </h6>
           {/* title */}
           <h1 className={Styles.Title}> Desarrollador Web independiente </h1>
           <hr className={Styles.Hr} />
-          <Button
-            variant="primary"
-            className={Styles.Button}
-            onClick={() => {
-              downloadCV();
-            }}
-          >
-            <BsCloudDownload /> Descargar cv
-          </Button>
+          <div className={Styles.ButtonContainer}>
+            <a href="/cv-matiasquiroga.pdf" download="cv-MatiasQuiroga">
+              <Button variant="primary" className={Styles.Button}>
+                <BsCloudDownload /> Descargar cv
+              </Button>
+            </a>
+          </div>
         </div>
         {/* right */}
         <div className={Styles.ImageContainer}>
