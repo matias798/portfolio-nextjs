@@ -1,15 +1,16 @@
 // Modules
+import { Autoplay, Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import "swiper/css";
+
+// Assets
 import rameDeco from "../../assets/images/rameDeco.png";
 import Glamira from "../../assets/images/glamira.png";
 import Cobranzas from "../../assets/images/Cobranzas.png";
 
-import { Autoplay, Pagination, Navigation } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
-
 // Styles
 import Styles from "../../styles/Project.module.css";
-import "swiper/css";
 
 const projects = [
   {
@@ -38,7 +39,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className={Styles.Bg}>
-      <h2 className="text-center py-2">Portafolio</h2>
+      <h2 className="text-center pb-4">Portafolio</h2>
 
       <Swiper
         modules={[Autoplay, Pagination, Navigation]}
