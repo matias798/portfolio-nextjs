@@ -1,0 +1,33 @@
+.Bg {
+    background-color: #F2EEFF;
+    height: 20vh;
+}
+
+.FooterContainer {
+    background-color: #F2EEFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    border: 4px solid 000000;
+}
+
+.Hr {
+    border: 4px solid 000000;
+    margin-bottom: 16px;
+}
+
+.Icon {
+    margin-right: 0.5em;
+    color: #000;
+    cursor: pointer;
+}
+
+.Icon:hover {
+    color: #8155BA;
+}
+
+.FooterText {
+    display: flex;
+    justify-content: space-between;
+    color: #808285;
+}
