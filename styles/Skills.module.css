@@ -1,29 +1,25 @@
 .Container {
-  width: 100%;
-  height: 100vh;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .SkillsContainer {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
-}
-
-.SkillsContainerTitle {
-  padding-bottom: 0.5em;
+  align-items: center;
+  margin-top: 2em;
 }
 
 .Column {
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  border-right: 3.5px solid #D9DBE9;
-  width: 30%;
-  height: 70%;
+  align-items: center;
   text-align: center;
-
+  width: 30%;
+  height: 50vh;
+  border-right: 2.5px solid #e6e6e6;
 }
 
 .Icon {
@@ -38,8 +34,8 @@
 .Design {
   background-color: #ffebf4;
   color: #ffafcc;
-  width: 14%;
-  height: 14%;
+  width: 4.4em;
+  height: 4.4em;
   padding: 0.8em;
   border-radius: 10px;
 }
@@ -47,8 +43,8 @@
 .Frontend {
   background-color: #bde0fe;
   color: #51abff;
-  width: 14%;
-  height: 14%;
+  width: 4.4em;
+  height: 4.4em;
   padding: 0.8em;
   border-radius: 10px;
 }
@@ -56,8 +52,30 @@
 .Backend {
   background-color: #e6daed;
   color: #ce5fe8;
-  width: 14%;
-  height: 14%;
+  width: 4.4em;
+  height: 4.4em;
   padding: 0.8em;
   border-radius: 10px;
+}
+
+.Subtitle {
+  font-size: 1.3em;
+  font-weight: 400;
+  color: #353535;
+  margin-bottom: 0;
+  letter-spacing: 1.3px;
+  margin-top: 0.6em;
+  margin-bottom: 0.15em;
+}
+
+.Text {
+  font-size: 1.2em;
+  padding: 0 !important;
+  margin: 0 !important;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em !important;
+  font-weight: lighter;
+  align-items: center;
+  color: #777990;
+  letter-spacing: 1.3px;
 }
