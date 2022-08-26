@@ -1,26 +1,26 @@
 export const ExperienceItems = [
   {
-    title: "Desarrollador  Full Stack",
+    title: "Desarrollador Full Stack",
     workedAt: "Modo Agrario",
-    date: "2020-2022",
+    date: "7/21 - 1/22 ",
     place: "Remoto",
   },
   {
-    title: "Desarrollador  Full Stack",
+    title: "Desarrollador Full Stack",
     workedAt: "Cobranzas Argentina",
-    date: "2020-2022",
+    date: "7/21-9/22",
     place: "Remoto",
   },
   {
-    title: "Lorem ipsum",
-    date: "2020-2022",
+    title: "Desarrollador Front End",
+    date: "6/21 - 7/21 ",
     place: "Remoto",
-    workedAt: "Lorem ipsum",
+    workedAt: "Hybeans",
   },
   {
-    title: "Lorem ipsum",
-    date: "2020-2022",
+    title: "Desarrollador Full Stack",
+    date: "4/21 - 6/22 ",
     place: "Remoto",
-    workedAt: "Lorem ipsum",
+    workedAt: "Zanni",
   },
 ];
