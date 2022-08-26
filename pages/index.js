@@ -1,6 +1,6 @@
 //  Components
 import Landing from "./Landing.js";
-import Loading from "./components/Loading.js";
+import Loading from "./../components/Loading.js";
 
 import { useEffect, useState } from "react";
 export default function Index() {

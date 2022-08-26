@@ -2,10 +2,10 @@
 import Image from "next/image";
 
 // Images
-import coderCompletedTask from "../../assets/images/coder-focused.jpg";
+import coderCompletedTask from "../assets/images/coder-focused.jpg";
 
 // Styles
-import Styles from "../../styles/About.module.css";
+import Styles from "./../styles/About.module.css";
 
 const About = () => {
   return (

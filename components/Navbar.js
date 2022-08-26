@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 // import navbar styles
-import Styles from "./../../styles/Navbar.module.css";
+import Styles from "./../styles/Navbar.module.css";
 
 import { useEffect, useState } from "react";
 

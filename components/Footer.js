@@ -1,5 +1,5 @@
 // Styles 
-import Styles from "../../styles/Footer.module.css";
+import Styles from "./../styles/Footer.module.css";
 
 // Modules
 import Link from "next/link";

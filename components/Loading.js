@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import anime from "animejs/lib/anime.es.js";
 // Styles
-import Styles from "../../styles/Loading.module.css";
+import Styles from "./../styles/Loading.module.css";
 
 const LoadingComponent = () => {
   useEffect(() => {

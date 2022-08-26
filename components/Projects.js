@@ -5,12 +5,12 @@ import Image from "next/image";
 import "swiper/css";
 
 // Assets
-import rameDeco from "../../assets/images/rameDeco.png";
-import Glamira from "../../assets/images/glamira.png";
-import Cobranzas from "../../assets/images/Cobranzas.png";
+import rameDeco from "./../assets/images/rameDeco.png";
+import Glamira from "./../assets/images/glamira.png";
+import Cobranzas from "./../assets/images/Cobranzas.png";
 
 // Styles
-import Styles from "../../styles/Project.module.css";
+import Styles from "./../styles/Project.module.css";
 
 const projects = [
   {

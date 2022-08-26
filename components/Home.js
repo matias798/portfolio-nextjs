@@ -5,10 +5,10 @@ import Image from "next/image";
 import Head from "next/head";
 
 // Styles
-import Styles from "./../../styles/Home.module.css";
+import Styles from "./../styles/Home.module.css";
 
 // Image
-import coderCompletedTask from "../../assets/images/coder-completed-task.jpg";
+import coderCompletedTask from "./../assets/images/coder-completed-task.jpg";
 
 const Home = () => {
   return (

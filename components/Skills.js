@@ -3,7 +3,7 @@ import { RiPencilRuler2Line } from "react-icons/ri";
 import { AiOutlineLaptop, AiOutlineCode } from "react-icons/ai";
 
 // Styles
-import Styles from "../../styles/Skills.module.css";
+import Styles from "./../styles/Skills.module.css";
 
 const Skills = () => {
   return (

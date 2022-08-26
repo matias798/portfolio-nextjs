@@ -1,12 +1,12 @@
 //  Components
-import Navbar from "./components/Navbar.js";
-import Home from "./components/Home.js";
-import About from "./components/About.js";
-import Projects from "./components/Projects.js";
-import Experience from "./components/Experience.js";
-import Skills from "./components/Skills.js";
-import Contact from "./components/Contact.js";
-import Footer from "./components/Footer.js";
+import Navbar from "./../components/Navbar.js";
+import Home from "./../components/Home.js";
+import About from "./../components/About.js";
+import Projects from "./../components/Projects.js";
+import Experience from "./../components/Experience.js";
+import Skills from "./../components/Skills.js";
+import Contact from "./../components/Contact.js";
+import Footer from "./../components/Footer.js";
 
 import { useEffect } from "react";
 export default function Index() {

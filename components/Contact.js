@@ -1,5 +1,5 @@
 // Styles
-import Styles from "../../styles/Contact.module.css";
+import Styles from "./../styles/Contact.module.css";
 
 // Module export
 import { Button } from "react-bootstrap";
