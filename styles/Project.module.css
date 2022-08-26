@@ -1,5 +1,5 @@
 .Bg {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,4 +35,24 @@
 .Subtitle {
     font-size: 1em;
     letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Bg {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Card {
+        width: 8em;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
 }
