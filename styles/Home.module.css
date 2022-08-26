@@ -65,7 +65,46 @@
 
 .ImageContainer {
     margin-top: -50px;
-    width: 55%;
-    padding: 5em;
+    max-width: 40%;
+    /* padding: 5em; */
     padding-top: 0;
+}
+
+@media (max-width: 769px) {
+    .HomeContainer {
+        justify-content: center;
+        height: 55vh;
+        padding: 0;
+    }
+
+    .Title {
+        font-size: 1.7em;
+        text-align: center;
+    }
+
+    .Hr {
+        display: none;
+    }
+
+    .ImageContainer {
+        display: none;
+
+    }
+
+    .Subtitle {
+        display: none;
+    }
+
+    .ButtonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Button {
+        padding: 10px 20px;
+        font-size: 1em;
+        text-align: center;
+
+    }
 }
