@@ -16,16 +16,6 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: FFFFFF;
-  }
-
-  body {
-    color: #FFFFFF;
-    background: #FFFFFF;
-  }
-}
 
 p {
   margin: 0 !important;
@@ -34,9 +24,7 @@ p {
 }
 
 
-
 /* Mouse Styles */
-
 * {
   cursor: none;
   margin: 0;
