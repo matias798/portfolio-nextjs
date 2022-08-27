@@ -7,6 +7,9 @@
     height: 70vh;
 }
 
+.Title{
+    text-align: start;
+}
 .aboutMeText {
     width: 50%;
 }
@@ -32,6 +35,12 @@
     .AboutContainer {
         align-items: center;
         justify-content: center;
+    height: 45vh;
+
+    }
+
+    .Title{
+        text-align: center;
     }
 
     .aboutMeText {
