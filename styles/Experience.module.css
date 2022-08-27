@@ -1,5 +1,5 @@
 .Bg {
-    background-color: #F2EEFF ;
+    background-color: #F2EEFF;
     width: 100%;
     height: 80vh;
     margin: 0;
@@ -59,7 +59,7 @@
 @media (max-width: 768px) {
 
     .Bg {
-        width: 100vw;
+        height: 100vh;
     }
 
     .Container {
@@ -70,9 +70,8 @@
 
     .Card {
         width: 95%;
-        height: auto;
+        height: 8em;
         margin: 0;
-        margin-top: 0.9em;
         margin-bottom: 0.9em;
     }
 
@@ -82,5 +81,11 @@
 
     .WorkedAt {
         font-size: 0.8em;
+    }
+}
+
+@media (max-width: 320px) {
+    .Card{
+        height: 7em;
     }
 }

@@ -41,11 +41,10 @@
 @media screen and (max-width: 768px) {
 
     .Bg {
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
+        height: 55vh;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
 
     .Card {
@@ -53,6 +52,14 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+
+    .Title {
+        padding-top: 0.9em;
+    }
+
+    .Subtitle {
+        display: none;
     }
 
 }
