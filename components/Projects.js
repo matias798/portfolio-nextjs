@@ -10,9 +10,15 @@ import Styles from "./../styles/Project.module.css";
 // Data
 import { projects } from "./../helpers/Data/Projects";
 
+const isMobile = () => {
+  if (typeof window !== "undefined") {
+    return window.innerWidth < 768;
+  }
+};
+
 const Projects = () => {
   return (
-    <div className={Styles.Bg}>
+    <div className={`${Styles.Bg} p-4`}>
       <h2 className="text-center pb-4">Portafolio</h2>
 
       <Swiper
@@ -26,7 +32,7 @@ const Projects = () => {
           clickable: true,
         }}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={isMobile?.() ? 1 : 2}
         className="container"
       >
         {projects.map((item) => (
@@ -49,7 +55,7 @@ const Projects = () => {
                 placeholder="blur"
               />
             </div>
-            <h3 className="mt-2">{item.title}</h3>
+            <h3 className={Styles.Title}>{item.title}</h3>
             <p className={Styles.Subtitle}>{item.subtitle}</p>
           </SwiperSlide>
         ))}
