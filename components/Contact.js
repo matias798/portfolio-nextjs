@@ -29,7 +29,7 @@ const Contact = () => {
               onClick={() => {
                 // Copy text to clipboard
                 var textArea = document.createElement("textarea");
-                textArea.value = "93415638192";
+                textArea.value = "3415638192";
                 document.body.appendChild(textArea);
                 textArea.select();
                 document.execCommand("copy");
