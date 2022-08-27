@@ -1,9 +1,6 @@
 // Component
 import Image from "next/image";
 
-// Images
-import coderCompletedTask from "../assets/images/coder-focused.jpg";
-
 // Styles
 import Styles from "./../styles/About.module.css";
 
@@ -13,7 +10,13 @@ const About = () => {
       {/* Left */}
       <span className={Styles.ImageContainer}>
         {/* image */}
-        <Image src={coderCompletedTask} alt="logo" className={Styles.image} />
+        <Image
+          src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-focused_kyugq9.jpg"
+          alt="logo"
+          width={500}
+          height={500}
+          className={Styles.image}
+        />
       </span>
       {/* right */}
 

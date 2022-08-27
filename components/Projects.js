@@ -49,6 +49,7 @@ const Projects = () => {
                 height={200}
                 className={Styles.Image}
                 placeholder="blur"
+                blurDataURL={item.image}
               />
             </div>
             <h3 className={Styles.Title}>{item.title}</h3>

@@ -7,9 +7,6 @@ import Head from "next/head";
 // Styles
 import Styles from "./../styles/Home.module.css";
 
-// Image
-import coderCompletedTask from "./../assets/images/coder-completed-task.jpg";
-
 const Home = () => {
   return (
     <div id="Home">
@@ -60,12 +57,15 @@ const Home = () => {
         <div className={Styles.ImageContainer}>
           {/* image */}
           <Image
-            src={coderCompletedTask}
+            src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-completed-task_vsqz6y.jpg"
             alt="logo"
-            priority
             placeholder="blur"
+            blurDataURL="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-completed-task_vsqz6y.jpg"
+            priority
             quality={100}
             loading="eager"
+            width={500}
+            height={500}
           />
         </div>
       </div>
