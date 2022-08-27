@@ -19,7 +19,7 @@ const About = () => {
 
       <div className={Styles.aboutMeText}>
         {/* title */}
-        <h2 className="text-start">Sobre mi</h2>
+        <h2 className={Styles.Title}>Sobre mi</h2>
         <span className={Styles.Text}>
           ¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full Stack
           (MERN) en busca de nuevas oportunidades laborales. Me considero una
