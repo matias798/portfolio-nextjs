@@ -10,11 +10,7 @@ import Styles from "./../styles/Project.module.css";
 // Data
 import { projects } from "./../helpers/Data/Projects";
 
-const isMobile = () => {
-  if (typeof window !== "undefined") {
-    return window.innerWidth < 768;
-  }
-};
+import {isMobile}  from "./../helpers/IsMobile";
 
 const Projects = () => {
   return (
