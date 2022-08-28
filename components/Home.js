@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 import { BsCloudDownload } from "react-icons/bs";
 import Image from "next/image";
 import Head from "next/head";
+import Script from "next/script";
 
 // Styles
 import Styles from "./../styles/Home.module.css";
@@ -12,6 +13,7 @@ const Home = () => {
     <div id="Home">
       <Head>
         <title>Matias quiroga</title>
+        <meta name="description" content="Matias quiroga" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         <link
@@ -33,6 +35,8 @@ const Home = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <Script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"/>
+
       <div className={`${Styles.HomeContainer}`}>
         {/* Left */}
         <div className={Styles.Left}>
