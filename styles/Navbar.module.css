@@ -8,8 +8,7 @@
 .SvgContainer {
     display: flex;
     align-content: center;
-    margin-left: 0.7em;
-
+    margin-left: 2em;
 }
 
 .navItem {
@@ -27,6 +26,5 @@
 @media (max-width: 769px) {
     .stickyNav {
         background-color: #ffffff !important;
-
     }
 }
