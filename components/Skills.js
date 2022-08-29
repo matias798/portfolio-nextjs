@@ -7,8 +7,10 @@ import Styles from "./../styles/Skills.module.css";
 
 const Skills = () => {
   return (
-    <div className={Styles.Container} id="Skills">
-      <h2 className="text-center">Conocimientos</h2>
+
+    <div className={Styles.cont} id="Skills">
+    <div className={Styles.Container}>
+      <h2 className={Styles.Title}>Conocimientos</h2>
       {/* Skilss */}
       <div className={Styles.SkillsContainer}>
         {/* Design */}
@@ -64,6 +66,7 @@ const Skills = () => {
           <div className={Styles.Text}>MySql</div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
