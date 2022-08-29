@@ -89,3 +89,9 @@
         height: 7em;
     }
 }
+
+@media (max-width: 375px) {
+    .Card{
+        height: 6.5em;
+    }
+}
