@@ -1,9 +1,11 @@
 .cont {
-  height: 110vh;
+  height: 75vh;
   display: block;
 }
 
 .Container {
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -89,6 +91,10 @@
 }
 
 @media (max-width: 769px) {
+  .cont {
+    height: 110vh;
+    display: block;
+  }
 
   .SkillsContainer {
     flex-wrap: wrap;
