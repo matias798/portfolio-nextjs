@@ -11,7 +11,7 @@ import Styles from "./../styles/Navbar.module.css";
 import { Logo } from "./Logo";
 
 function NavScrollExample() {
-  
+
   const [clientWindowHeight, setClientWindowHeight] = useState("");
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
   const [padding, setPadding] = useState(30);
@@ -49,7 +49,7 @@ function NavScrollExample() {
       <Container fluid>
         <Navbar.Brand href="#Home" className="m-0 p-0">
           <div className={Styles.SvgContainer}>
-            <Logo/>
+            <Logo />
           </div>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -71,7 +71,7 @@ function NavScrollExample() {
                 href="#About"
                 eventKey="link-1"
               >
-                About
+                Sobre mí
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
