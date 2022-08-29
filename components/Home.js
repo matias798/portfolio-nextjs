@@ -62,7 +62,7 @@ const Home = () => {
           {/* image */}
           <Image
             src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-completed-task_vsqz6y.jpg"
-            alt="logo"
+            alt="focused coder"
             placeholder="blur"
             blurDataURL="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-completed-task_vsqz6y.jpg"
             priority
