@@ -49,8 +49,8 @@ const LoadingComponent = () => {
 
   return (
     <div className={Styles.Bg}>
-      <span>
-        <div className="d-flex justify-content-center">
+      <span  >
+        <div className={Styles.logo}>
           <svg
             width="275"
             height="100"
@@ -97,7 +97,7 @@ const LoadingComponent = () => {
             </g>
           </svg>
         </div>
-        <h1 className={`${Styles.Title} move mt-2`}>Matias Quiroga</h1>
+        <h1 className={`${Styles.Title} move mt-2`}>Matias  Quiroga</h1>
         <h1 className={`${Styles.Title} move2`}> Desarrollador Web</h1>
       </span>
     </div>

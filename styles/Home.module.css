@@ -1,8 +1,8 @@
 .HomeContainer {
     display: flex;
     justify-content: space-around;
-    height: 85vh;
-    padding-left: 3em;
+    height: 80vh;
+    padding-left: 1em;
     padding-top: 3.5em;
 }
 
@@ -62,8 +62,8 @@
 }
 
 .ImageContainer {
-    margin-top: -50px;
-    max-width: 40%;
+    margin-top: -5%;
+    max-width: 39%;
     /* padding: 5em; */
     padding-top: 0;
 }
