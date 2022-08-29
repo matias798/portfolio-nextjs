@@ -1,6 +1,6 @@
 // Modules
 import { useEffect } from "react";
-import * as anime from "../node_modules/animejs/lib/anime.es.js";
+import anime from "../node_modules/animejs/lib/anime.es.js";
 // Styles
 import Styles from "./../styles/Loading.module.css";
 
