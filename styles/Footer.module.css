@@ -1,6 +1,13 @@
-.Bg {
-    background-color: #F2EEFF;
+.ContainerSize {
     height: 20vh;
+    width: 100%;
+    background-color: #F2EEFF;
+
+}
+.ContainerColor{
+    width:100%;
+    background-color: #F2EEFF;
+
 }
 
 .FooterContainer {
@@ -31,13 +38,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     color: #808285;
+    background-color: #F2EEFF;
 }
 
 @media screen and (max-width: 768px) {
     .FooterText {
-        justify-content:center;
+        justify-content: center;
         font-size: normal;
-        padding: 0.3em;
+        text-align: center;
 
     }
 }

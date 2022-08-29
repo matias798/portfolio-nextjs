@@ -15,7 +15,8 @@ import {Logo} from "./Logo";
 
 const Contact = () => {
   return (
-    <div className={Styles.Bg}>
+    <div className={Styles.ContainerSize}>
+    <div className={Styles.ContainerColor}>
       <div className={`${Styles.FooterContainer} `}>
         <div className="d-flex justify-content-between">
           <Logo />
@@ -51,6 +52,7 @@ const Contact = () => {
           <p>DISEÑADO UTILIZANDO FIGMA & NEXT.JS</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
