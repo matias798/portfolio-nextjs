@@ -3,6 +3,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
+import Link from "next/link";
 
 // Styles
 import Styles from "./../styles/Project.module.css";
@@ -10,7 +11,7 @@ import Styles from "./../styles/Project.module.css";
 // Data
 import { projects } from "./../helpers/Data/Projects";
 
-import {isMobile}  from "./../helpers/IsMobile";
+import { isMobile } from "./../helpers/IsMobile";
 
 const Projects = () => {
   return (
@@ -37,23 +38,27 @@ const Projects = () => {
             style={{ cursor: "pointer" }}
             className={Styles.Card}
           >
-            {/* image */}
-            <div
-              className={Styles.Image}
-              style={{ backgroundColor: item.color }}
-            >
-              <Image
-                src={item.image}
-                alt={item.title}
-                width={400}
-                height={200}
-                className={Styles.Image}
-                placeholder="blur"
-                blurDataURL={item.image}
-              />
-            </div>
-            <h3 className={Styles.Title}>{item.title}</h3>
-            <p className={Styles.Subtitle}>{item.subtitle}</p>
+            <Link href={item.link} className={Styles.Link}>
+              <a className={Styles.Link}> 
+                {/*  image */}
+                <div
+                  className={Styles.Image}
+                  style={{ backgroundColor: item.color }}
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={200}
+                    className={Styles.Image}
+                    placeholder="blur"
+                    blurDataURL={item.image}
+                  />
+                </div>
+                <h3 className={Styles.Title}>{item.title}</h3>
+                <p className={Styles.Subtitle}>{item.subtitle}</p>
+              </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>
