@@ -15,7 +15,10 @@ const Experience = () => {
         {ExperienceItems.map((item) => {
           return (
             <Link href={item.url} key={item.id}>
-              <a className={Styles.Card}>
+              <a className={Styles.Card}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className={Styles.ItemTitle}>{item.title}</div>
                 <div className={Styles.WorkedAt}>{item.workedAt}</div>
                 <div className={`${Styles.ItemInfo} pt-2`}>

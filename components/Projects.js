@@ -39,7 +39,8 @@ const Projects = () => {
             className={Styles.Card}
           >
             <Link href={item.link} className={Styles.Link}>
-              <a className={Styles.Link}> 
+              <a className={Styles.Link} target="_blank"
+                rel="noopener noreferrer">
                 {/*  image */}
                 <div
                   className={Styles.Image}
