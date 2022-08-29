@@ -26,7 +26,7 @@ const About = () => {
         <span className={Styles.Text}>
           ¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full Stack
           (MERN) en busca de nuevas oportunidades laborales. Me considero una
-          persona proactiva, responsable, con un gran Interés de seguir
+          persona proactiva, responsable, con un gran interés de seguir
           aprendiendo nuevas habilidades y tecnologías web para mi desarrollo
           profesional.
         </span>
