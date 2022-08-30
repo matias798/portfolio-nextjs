@@ -16,7 +16,6 @@
     font-size: 1.3em;
     text-align: center;
     padding-left: 1em !important;
-
 }
 
 .navItem:hover {
@@ -26,5 +25,15 @@
 @media (max-width: 769px) {
     .stickyNav {
         background-color: #ffffff !important;
+    }
+
+    .SvgContainer {
+        display: flex;
+        align-content: center;
+        margin: 0;
+    }
+
+    .navItem {
+        padding: 0%;
     }
 }
