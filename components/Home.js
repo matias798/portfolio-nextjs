@@ -7,6 +7,7 @@ import Script from "next/script";
 
 // Styles
 import Styles from "./../styles/Home.module.css";
+import { SocialInfo } from "./SocialInfo";
 
 const Home = () => {
   return (
@@ -61,6 +62,8 @@ const Home = () => {
             <hr className={Styles.HrMobile} />
             <p className={Styles.SubtitleMobile}>Hola 👋</p>
             <p className={Styles.SubtitleMobile}>Soy un Desarrollador Web Full Stack en busca de nuevas oportunidades laborales.</p>
+          < SocialInfo />
+          
           </div>
         </div>
         {/* right */}
