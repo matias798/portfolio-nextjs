@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Styles
 import Styles from "./../styles/About.module.css";
+import { isMobile } from "../helpers/IsMobile";
 
 const About = () => {
   return (
@@ -25,15 +26,16 @@ const About = () => {
         <h2 className={Styles.Title}>Sobre mi</h2>
         <span className={Styles.Text}>
           {
-            window.innerWidth > 768 ? (
-              <p>
+            isMobile ?
+              (
+                <p>
+                  Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el
+                  aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir
+                  aprendiendo nuevas habilidades y tecnologías para mi desarrollo
+                  profesional.</p>) :
+              (<p>
                 ¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full Stack
                 (MERN) en busca de nuevas oportunidades laborales.  Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el
-                aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir
-                aprendiendo nuevas habilidades y tecnologías para mi desarrollo
-                profesional.</p>) : (
-              <p>
-                Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el
                 aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir
                 aprendiendo nuevas habilidades y tecnologías para mi desarrollo
                 profesional.</p>)
