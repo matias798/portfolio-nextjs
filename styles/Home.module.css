@@ -44,6 +44,7 @@
     margin-bottom: 2em;
 }
 
+
 .Button {
     background-color: #CA70E9;
     border: none;
@@ -68,29 +69,73 @@
     padding-top: 0;
 }
 
+.MobileContainer {
+    display: none;
+}
+
 @media (max-width: 769px) {
-    .HomeContainer {
+    .MobileContainer {
+        display: flex;
         justify-content: center;
-        height: 55vh;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .HomeContainer {
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        height: 60vh;
         padding: 0;
     }
 
     .Title {
-        font-size: 1.7em;
+        display: none;
+    }
+
+    .TitleMobile {
+        font-size: 31px;
         text-align: center;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+        line-height: 0;
+        margin-bottom: 0.7em;
+        letter-spacing: 1px;
+        color: #000;
     }
 
     .Hr {
         display: none;
     }
 
+    .HrMobile {
+        width: 5em !important;
+        border: 2px solid #63b6ff;
+        fill: #63b6ff;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+
     .ImageContainer {
         display: none;
-
     }
 
     .Subtitle {
         display: none;
+    }
+
+    .SubtitleMobile {
+        display: block;
+        font-size: 13px;
+        font-weight: 100;
+        letter-spacing: 3PX;
+        margin-top: 2em;
+        color: #000;
+        text-align: center;
+        overflow-wrap: break-word;
+        margin-bottom: 1em;
+        line-height: 2em;
+        max-width: 80%;
     }
 
     .Left {
@@ -100,13 +145,12 @@
         justify-content: center;
         width: 100%;
         height: 55vh;
-        
+
     }
 
     .ButtonContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
+
     }
 
     .Button {

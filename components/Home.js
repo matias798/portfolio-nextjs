@@ -35,7 +35,7 @@ const Home = () => {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <Script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"/>
+      <Script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js" />
 
       <div className={`${Styles.HomeContainer}`}>
         {/* Left */}
@@ -55,6 +55,12 @@ const Home = () => {
                 <BsCloudDownload /> Descargar cv
               </Button>
             </a>
+          </div>
+          <div className={Styles.MobileContainer}>
+            <h1 className={Styles.TitleMobile}>Matías Quiroga</h1>
+            <hr className={Styles.HrMobile} />
+            <p className={Styles.SubtitleMobile}>Hola 👋</p>
+            <p className={Styles.SubtitleMobile}>Soy un Desarrollador Web Full Stack en busca de nuevas oportunidades laborales.</p>
           </div>
         </div>
         {/* right */}
