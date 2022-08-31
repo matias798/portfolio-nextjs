@@ -60,15 +60,21 @@ const Home = () => {
           <div className={Styles.MobileContainer}>
             <h1 className={Styles.TitleMobile}>Matías Quiroga</h1>
             <hr className={Styles.HrMobile} />
-            <p className={Styles.SubtitleMobile}>Hola 👋</p>
-            <p className={Styles.SubtitleMobile}>Soy un Desarrollador Web Full Stack en busca de nuevas oportunidades laborales.</p>
-            < SocialInfo />
-            <div className='animate__animated animate__repeat-3	animate__heartBeat'>
-              <Image
-                src={arrow}
-                alt="arrow"
-                priority />
-            </div>
+
+            <span className={`d-flex justify-content-center flex-wrap animate__animated animate__fadeInUp text-center`}>
+
+              <span className={`${Styles.SubtitleMobile} `} >
+                <p >Hola 👋</p>
+                <p>Soy un Desarrollador Web Full Stack en busca de nuevas oportunidades laborales.</p>
+                < SocialInfo />
+              </span>
+              <div className='animate__animated animate__repeat-3	animate__heartBeat d-block w-100'>
+                <Image
+                  src={arrow}
+                  alt="arrow"
+                  priority />
+              </div>
+            </span>
           </div>
         </div>
         {/* right */}
