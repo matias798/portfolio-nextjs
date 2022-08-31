@@ -7,12 +7,13 @@ import { isMobile } from "../helpers/IsMobile";
 
 const About = () => {
   return (
-    <div className={Styles.AboutContainer} id="About">
+    <div className={Styles.about} id="About">
+    <div className={Styles.AboutContainer} >
       {/* Left */}
       <span className={Styles.ImageContainer}>
         {/* image */}
         <Image
-          src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642527/portfolio/coder-focused_kyugq9.jpg"
+          src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661975033/portfolio/service-3_xsmcqc.png"
           alt="focused coder"
           width={500}
           height={500}
@@ -42,6 +43,7 @@ const About = () => {
           }
         </span>
       </div>
+    </div>
     </div>
   );
 };
