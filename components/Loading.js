@@ -75,7 +75,7 @@ const LoadingComponent = () => {
               fill="url(#SvgjsLinearGradient9504)"
             >
               <path
-                stroke="#1C2833"
+                stroke="#566573"
                 fill="none"
                 strokeWidth="1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ const LoadingComponent = () => {
             </g>
           </svg>
         </div>
-        <h1 className={`${Styles.Title} move mt-2`}>Matias  Quiroga</h1>
+        <h1 className={`${Styles.Title} move mt-2`}>Matías  Quiroga</h1>
         <h1 className={`${Styles.Title} move2`}> Desarrollador Web</h1>
       </span>
     </div>
