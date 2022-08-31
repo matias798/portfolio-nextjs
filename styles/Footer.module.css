@@ -15,7 +15,7 @@
     background-color: #F2EEFF;
     margin-left: auto;
     margin-right: auto;
-    width: 95vw;
+    max-width: 95vw;
     border: 4px solid 000000;
 }
 
