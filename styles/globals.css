@@ -61,6 +61,15 @@ a {
 }
 
 
+.g-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 70vh;
+  max-width: 82vw;
+}
 
 .cursor {
   width: 40px;
