@@ -1,0 +1,9 @@
+.Icon {
+    padding: 0.8em !important;
+    color: #000;
+    cursor: pointer;
+}
+
+.Icon:hover {
+    color: #8155BA;
+}

@@ -3,7 +3,7 @@ import linkedin from '../assets/Icons/linkedin.svg';
 import mail from '../assets/Icons/mail.svg';
 
 // Styles
-import Styles from "./../styles/Footer.module.css";
+import Styles from "./../styles/SocialInfo.module.css";
 
 // Modules
 import Link from "next/link";
