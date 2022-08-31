@@ -7,6 +7,7 @@ import Experience from "./../components/Experience.js";
 import Skills from "./../components/Skills.js";
 import Contact from "./../components/Contact.js";
 import Footer from "./../components/Footer.js";
+import { HeadAndScripts } from "./../components/HeadAndScripts";
 
 import { useEffect } from "react";
 import { isMobile } from "./../helpers/IsMobile";
@@ -21,7 +22,10 @@ const Landing = () => {
 
   return (
     <>
+      <HeadAndScripts />
+
       <div>
+        {/* Check if show cursor or not */}
         {isMobile() ? null : (
           <>
             <div className="cursor" id="cursor" />
