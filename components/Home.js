@@ -64,10 +64,10 @@ const Home = () => {
         <div className={Styles.ImageContainer}>
           {/* image */}
           <Image
-            src='/intro-section-illustration.png'
+            src='https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661974694/portfolio/intro-section-illustration_qhlg6u.png'
             alt="focused coder"
             placeholder="blur"
-            blurDataURL="/intro-section-illustration.png"
+            blurDataURL="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661974694/portfolio/intro-section-illustration_qhlg6u.png"
             priority
             quality={100}
             loading="eager"
