@@ -9,7 +9,7 @@ const Skills = () => {
   return (
 
     <div className={Styles.cont} id="Skills">
-    <div className={`g-container ${Styles.Container}`}>
+    <div className={Styles.Container}>
       <h2 className={Styles.Title}>Conocimientos</h2>
       {/* Skilss */}
       <div className={Styles.SkillsContainer}>

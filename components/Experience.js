@@ -15,7 +15,8 @@ const Experience = () => {
         {ExperienceItems.map((item) => {
           return (
             <Link href={item.url} key={item.id}>
-              <a className={Styles.Card}
+              <a
+                className={Styles.Card}
                 target="_blank"
                 rel="noopener noreferrer"
               >
