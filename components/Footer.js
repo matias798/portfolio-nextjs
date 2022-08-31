@@ -6,11 +6,10 @@ import { Logo } from "./Logo";
 import { SocialInfo } from "./SocialInfo";
 
 const Contact = () => {
-
   return (
     <div className={Styles.ContainerSize}>
       <div className={Styles.ContainerColor}>
-        <div className={`${Styles.FooterContainer} `}>
+        <div className={Styles.FooterContainer}>
           <div className="d-flex justify-content-between">
             <Logo />
             <SocialInfo />
