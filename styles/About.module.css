@@ -53,14 +53,14 @@
     .AboutContainer {
         align-items: center;
         justify-content: center;
-        height: 55vh;
+        height: 40vh;
 
     }
 
     .Title {
         text-align: center;
-        font-size: 18px;
-    
+        font-size: 22px;
+        font-weight: 500;
     }
 
     .aboutMeText {

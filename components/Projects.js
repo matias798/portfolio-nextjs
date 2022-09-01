@@ -16,8 +16,8 @@ const Projects = () => {
   return (
     <div className={Styles.Bg}>
       <div className="g-Container">
-        <h2 className="text-center">Portafolio</h2>
-        <hr className='Hr' />
+        <h2 className="text-center m-0">Portafolio</h2>
+        <hr className='Hr'/>
 
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
