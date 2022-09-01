@@ -11,7 +11,7 @@ const Skills = () => {
       <div className={Styles.Container}>
         <div className={Styles.CenterContent}>
           <h2 className={Styles.Title}>Conocimientos</h2>
-          <div className={Styles.CenterContent}>
+          <div className={Styles.hr}>
             <hr className="Hr" />
           </div>
         </div>
