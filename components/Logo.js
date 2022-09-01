@@ -1,6 +1,6 @@
 export const Logo = () => {
   return (
-    <div className="d-flex justify-content-center align-content-center">
+    <div className="d-flex justify-content-center align-content-center ms-2">
       <svg
         width="199.99999999999997"
         height="147.09298750392423"
@@ -9,7 +9,6 @@ export const Logo = () => {
         style={{
           height: "auto",
           maxWidth: "40px",
-  
         }}
       >
         <defs id="SvgjsDefs1660">
