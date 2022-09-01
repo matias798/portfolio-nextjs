@@ -17,7 +17,7 @@
   align-content: center;
   justify-content: center;
   text-align: center;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
 }
 
@@ -121,11 +121,26 @@
   }
 
   .Text {
-
     padding-right: 0 !important;
     font-size: 16px;
-
   }
+}
+
+@media (max-width: 375px) {
+  .cont {
+    height: 120vh;
+    display: block;
+  }
+
+  .Text {
+    font-size: 14px;
+  }
+  .Column {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1em;
+  }
+
 }
 
 @media screen and (min-width: 769px) {
