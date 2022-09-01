@@ -15,8 +15,9 @@ import { isMobile } from "./../helpers/IsMobile";
 const Projects = () => {
   return (
     <div className={Styles.Bg}>
-      <div className='g-Container'>
-        <h2 className="text-center pb-4">Portafolio</h2>
+      <div className="g-Container">
+        <h2 className="text-center">Portafolio</h2>
+        <hr className='Hr' />
 
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}

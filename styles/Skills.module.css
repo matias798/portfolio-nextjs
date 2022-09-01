@@ -11,6 +11,16 @@
   justify-content: center;
 }
 
+.CenterContent {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 ;
+  padding: 0;
+}
+
 .Title {
   text-align: center;
 }
@@ -19,8 +29,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2em;
-  
+
 }
 
 .Column {
@@ -92,7 +101,7 @@
 
 @media (max-width: 769px) {
   .cont {
-    height: 110vh;
+    height: 100vh;
     display: block;
   }
 
@@ -102,13 +111,20 @@
 
   .Title {
     margin: 0;
-    margin-top: 2em;
+    margin-top: 1em;
   }
 
   .Column {
     width: 100%;
     height: 100%;
     margin-bottom: 2em;
+  }
+
+  .Text {
+
+    padding-right: 0 !important;
+    font-size: 16px;
+
   }
 }
 
