@@ -101,7 +101,7 @@
 
 @media (max-width: 769px) {
   .cont {
-    height: 100vh;
+    height: 130vh;
     display: block;
   }
 
@@ -128,7 +128,7 @@
 
 @media (max-width: 375px) {
   .cont {
-    height: 120vh;
+    height: 140vh;
     display: block;
   }
 
