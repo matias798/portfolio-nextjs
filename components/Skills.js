@@ -7,7 +7,6 @@ import Styles from "./../styles/Skills.module.css";
 
 const Skills = () => {
   return (
-    <div >
       <div className={Styles.cont}>
         <div className={Styles.Container}>
           <div className={Styles.CenterContent}>
@@ -74,7 +73,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
