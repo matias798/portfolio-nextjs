@@ -14,20 +14,22 @@ const Experience = () => {
         <h2 className={Styles.Title}>Experiencia</h2>
         <div className={Styles.Container}>
           {ExperienceItems.map((item) => {
-            <Link href={item.url} key={item.id}>
-              <a
-                className={Styles.Card}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className={Styles.ItemTitle}>{item.title}</div>
-                <div className={Styles.WorkedAt}>{item.workedAt}</div>
-                <div className={`${Styles.ItemInfo} pt-2`}>
-                  <div>{item.date}</div>
-                  <div>{item.place}</div>
-                </div>
-              </a>
-            </Link>;
+            return (
+              <Link href={item.url} key={item.id}>
+                <a
+                  className={Styles.Card}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className={Styles.ItemTitle}>{item.title}</div>
+                  <div className={Styles.WorkedAt}>{item.workedAt}</div>
+                  <div className={`${Styles.ItemInfo} pt-2`}>
+                    <div>{item.date}</div>
+                    <div>{item.place}</div>
+                  </div>
+                </a>
+              </Link>
+            );
           })}
         </div>
       </div>
