@@ -1,5 +1,5 @@
 .Bg {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,20 +7,51 @@
 }
 
 
-.Card {
+.Item {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
     cursor: pointer;
+    border-radius: 0 !important;
+}
+
+.CardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .Image {
     padding: 2em;
-    border-radius: 25px;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     cursor: pointer;
+}
 
+.Image:hover {
+    transform: scale(1.009);
+    transition: all .5s ease;
 }
 
 .roundedButton {
@@ -31,7 +62,6 @@
     justify-content: center;
     margin-left: 0.2em;
     margin-right: 0.2em;
-    margin-bottom: 1em;
     width: 2.2em;
     height: 2.2em;
 }
@@ -39,7 +69,8 @@
 .Title {
     color: #212529;
     cursor: pointer;
-    margin-top: 0.3em;
+    margin-top: 0.5em;
+    font-size: 1.72em;
 }
 
 .Subtitle {
@@ -47,6 +78,7 @@
     letter-spacing: 1px;
     color: #000000;
     cursor: pointer;
+    text-align: center;
 
 }
 
@@ -65,18 +97,31 @@
         margin-top: 2em;
     }
 
-    .Card {
+    .Item {
         width: 8em;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    .imagen {
+        width: 100%;
+        height: 20vh;
+        object-fit: cover;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff!important;
+    }
+
+
     .Title {
         font-size: 20px;
         font-weight: 500;
         color: #353535;
-        margin-top: 1em;
+        margin-top: 0.5em;
     }
 
     .Subtitle {

@@ -17,7 +17,7 @@ const Projects = () => {
     <div className={Styles.Bg}>
       <div className="g-Container">
         <h2 className="text-center m-0">Portafolio</h2>
-        <hr className='Hr'/>
+        <hr className="Hr" />
 
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
@@ -34,37 +34,42 @@ const Projects = () => {
           className="container"
         >
           {projects.map((item) => (
-            <SwiperSlide
-              key={Math.random()}
-              style={{ cursor: "pointer" }}
-              className={Styles.Card}
-            >
-              <Link href={item.link} className={Styles.Link}>
-                <a
-                  className={Styles.Link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {/*  image */}
-                  <div
-                    className={Styles.Image}
-                    style={{ backgroundColor: item.color }}
+            <div key={Math.random()}>
+           <h2>DSSS</h2>
+              <SwiperSlide key={Math.random()} className={Styles.Item}>
+                {" "}
+                <Link href={item.link}>
+                  <a
+                    className={Styles.Link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      width={400}
-                      height={200}
-                      className={Styles.Image}
-                      placeholder="blur"
-                      blurDataURL={item.image}
-                    />
-                  </div>
-                  <h3 className={Styles.Title}>{item.title}</h3>
-                  <p className={Styles.Subtitle}>{item.subtitle}</p>
-                </a>
-              </Link>
-            </SwiperSlide>
+                    {/*  image */}
+                    <div className={Styles.CardContainer}>
+                      <div className={Styles.Card}>
+                        <span
+                          className={Styles.imagen}
+                          style={{ backgroundColor: item.color }}
+                        >
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            width={400}
+                            height={200}
+                            className={Styles.Image}
+                            placeholder="blur"
+                            blurDataURL={item.image}
+                            title={item.title}
+                          />
+                        </span>
+                        <h3 className={Styles.Title}>{item.title}</h3>
+                        <p className={Styles.Subtitle}>{item.subtitle}</p>
+                      </div>
+                    </div>
+                  </a>
+                </Link>
+              </SwiperSlide>
+            </div>
           ))}
         </Swiper>
       </div>
