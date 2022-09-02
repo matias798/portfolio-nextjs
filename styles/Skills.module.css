@@ -102,8 +102,10 @@
   padding-right: 0.5em !important;
   font-weight: lighter;
   align-items: center;
-  color: #777990;
-  letter-spacing: 1.3px;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #000;
 }
 
 @media screen and (min-width: 769px) {
@@ -156,6 +158,7 @@
   }
 
 }
+
 @media (max-width: 428px) {
   .cont {
     height: 120vh;
@@ -209,5 +212,3 @@
   }
 
 }
-
-
