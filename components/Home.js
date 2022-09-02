@@ -54,10 +54,10 @@ const Home = () => {
         <div className={Styles.ImageContainer}>
           {/* image */}
           <Image
-            src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661974694/portfolio/intro-section-illustration_qhlg6u.png"
+            src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/intro-section-illustration_qhlg6u_khpd7r.webp"
             alt="focused coder"
             placeholder="blur"
-            blurDataURL="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661974694/portfolio/intro-section-illustration_qhlg6u.png"
+            blurDataURL="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/intro-section-illustration_qhlg6u_khpd7r.webp"
             priority
             quality={100}
             loading="eager"

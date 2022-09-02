@@ -4,7 +4,7 @@ export const projects = [
     subtitle:
       "Ecommerce enfocado en la venta de ropa y joyeria para hombres y mujeres realizado de forma individual",
     image:
-      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642528/portfolio/Glamira_pzzf6u.png",
+      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/Glamira_pzzf6u_woe7ga.webp",
     color: "#FFEBF4",
 
     link: "https://glamira-frontend.web.app/",
@@ -14,7 +14,7 @@ export const projects = [
     subtitle:
       "Ecommerce enfocado en la venta de productos de decoración realizado de forma conjunta en Digital House",
     image:
-      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642528/portfolio/ramedeco_zij851.png",
+      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/Glamira_pzzf6u_woe7ga.webp",
     color: "#e6daed",
     link: "https://ramedeco.herokuapp.com/",
   },
@@ -24,7 +24,7 @@ export const projects = [
       "Sistema el cual utilizando un archivo csv con los datos de los clientes se envia un mensaje y un pdf predefinido.",
     color: "#F2EEFF",
     image:
-      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661642526/portfolio/Cobranzas_cjpbyf.png",
+      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/Cobranzas_cjpbyf_qigvp7.webp",
     link: "https://cobranzas-argentina.web.app/login",
   },
 ];

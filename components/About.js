@@ -13,7 +13,7 @@ const About = () => {
         <span className={Styles.ImageContainer}>
           {/* image */}
           <Image
-            src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661975033/portfolio/service-3_xsmcqc.png"
+            src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146269/portfolio/service-3_xsmcqc_puhzpw.webp"
             alt="focused coder"
             width="500"
             height="500"
