@@ -35,7 +35,7 @@ const Projects = () => {
         >
           {projects.map((item) => (
             <div key={Math.random()}>
-           <h2>DSSS</h2>
+              
               <SwiperSlide key={Math.random()} className={Styles.Item}>
                 {" "}
                 <Link href={item.link}>
@@ -54,8 +54,8 @@ const Projects = () => {
                           <Image
                             src={item.image}
                             alt={item.title}
-                            width={400}
-                            height={200}
+                            width="400"
+                            height="200"
                             className={Styles.Image}
                             placeholder="blur"
                             blurDataURL={item.image}

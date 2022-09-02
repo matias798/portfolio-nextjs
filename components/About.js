@@ -15,8 +15,8 @@ const About = () => {
           <Image
             src="https://res.cloudinary.com/dsoeo0zhi/image/upload/v1661975033/portfolio/service-3_xsmcqc.png"
             alt="focused coder"
-            width={500}
-            height={500}
+            width="500"
+            height="500"
             className={Styles.image}
           />
         </span>

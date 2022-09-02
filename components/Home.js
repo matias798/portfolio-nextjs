@@ -7,7 +7,6 @@ import arrow from "../assets/Icons/arrow-down.svg";
 import Styles from "./../styles/Home.module.css";
 import { SocialInfo } from "./SocialInfo";
 
-
 const Home = () => {
   return (
     <div id="Home">
@@ -40,7 +39,13 @@ const Home = () => {
                 <SocialInfo />
               </span>
               <div className="animate__animated animate__repeat-3	animate__heartBeat d-block w-100">
-                <Image src={arrow} alt="arrow" priority />
+                <Image
+                  src={arrow}
+                  alt="arrow"
+                  width="24"
+                  height="24"
+                  priority
+                />
               </div>
             </span>
           </div>

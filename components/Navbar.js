@@ -47,7 +47,7 @@ function NavScrollExample() {
       }}
     >
       <Container fluid>
-        <Navbar.Brand href="#Home" className="m-0 p-0">
+        <Navbar.Brand href="#Home" className="m-0 p-0" title="Home">
           <div className={Styles.SvgContainer}>
             <Logo />
           </div>
