@@ -101,7 +101,27 @@
     }
 }
 
+@media (max-width: 500px) {
+    .Bg {
+        height: 95vh;
+    }
+
+    .Card {
+        height: 7em;
+    }
+}
+@media (max-width: 428px) {
+    .Bg {
+        height: 95vh;
+    }
+}
+
+
 @media (max-width: 320px) {
+    .Bg {
+        height: 100vh;
+    }
+
     .Card {
         height: 7em;
     }
