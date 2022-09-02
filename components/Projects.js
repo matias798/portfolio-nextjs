@@ -14,7 +14,7 @@ import { isMobile } from "./../helpers/IsMobile";
 
 const Projects = () => {
   return (
-    <div className={Styles.Bg}>
+    <div className={Styles.Bg} id="Portfolio">
       <div className="g-Container">
         <h2 className="text-center m-0">Portafolio</h2>
         <hr className="Hr" />

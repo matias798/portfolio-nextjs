@@ -68,10 +68,10 @@ function NavScrollExample() {
             <Nav.Item>
               <Nav.Link
                 className={Styles.navItem}
-                href="#About"
+                href="#Portfolio"
                 eventKey="link-1"
               >
-                Sobre mí
+                Portafolio
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>

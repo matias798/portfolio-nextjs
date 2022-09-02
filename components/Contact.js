@@ -19,7 +19,7 @@ const Contact = () => {
   return (
     <div id="Contact">
       <div className={Styles.Bg}>
-        <h2 className={Styles.Title}>¿Necesitas una pagina web?</h2>
+        <h2 className={Styles.Title}>¿Necesitas una página web?</h2>
 
         {/* Buttons */}
         <div className="d-flex justify-content-center">
