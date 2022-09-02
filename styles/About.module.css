@@ -54,7 +54,6 @@
         align-items: center;
         justify-content: center;
         height: 40vh;
-
     }
 
     .Title {
@@ -77,5 +76,11 @@
 
     .Text {
         font-size: 1em !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .AboutContainer {
+        height:65vh;
     }
 }
