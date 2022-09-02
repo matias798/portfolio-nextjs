@@ -1,29 +1,29 @@
 export const ExperienceItems = [
   {
-    title: "Desarrollador Full Stack",
+    workedAt: "Full Stack",
     date: "4/21 - 6/22 ",
     place: "Remoto",
-    workedAt: "Zanni",
+    title: "Zanni Inmobiliaria",
     url: "https://zanni-f8324.web.app/",
   },
 
   {
-    title: "Desarrollador Front End",
+    workedAt: "Front End",
     date: "6/21 - 7/21 ",
     place: "Remoto",
-    workedAt: "Hybeans",
+    title: "Hybeans",
     url: "https://hybeans.com/",
   },
   {
-    title: "Desarrollador Full Stack",
-    workedAt: "Modo Agrario",
+    workedAt: "Full Stack",
+    title: "Modo Agrario",
     date: "7/21 - 1/22 ",
     place: "Remoto",
     url: "https://www.modoagrario.com/",
   },
   {
-    title: "Desarrollador Full Stack",
-    workedAt: "Cobranzas Argentina",
+    workedAt: "Full Stack",
+    title: "Cobranzas Argentina",
     date: "7/21-9/22",
     place: "Remoto",
     url: "https://cobranzas-argentina.web.app/login",
