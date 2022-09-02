@@ -1,5 +1,5 @@
 //  Components
-import Landing from "./Landing.js";
+import Landing from "./../components/Landing.js";
 import Loading from "./../components/Loading.js";
 
 import { useEffect, useState } from "react";

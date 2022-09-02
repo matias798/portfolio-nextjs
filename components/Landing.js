@@ -1,17 +1,17 @@
 //  Components
-import Navbar from "./../components/Navbar.js";
-import Home from "./../components/Home.js";
-import About from "./../components/About.js";
-import Projects from "./../components/Projects.js";
-import Experience from "./../components/Experience.js";
-import Skills from "./../components/Skills.js";
-import Contact from "./../components/Contact.js";
-import Footer from "./../components/Footer.js";
-import { HeadAndScripts } from "./../components/HeadAndScripts";
+import Navbar from "./Navbar.js";
+import Home from "./Home.js";
+import About from "./About.js";
+import Projects from "./Projects.js";
+import Experience from "./Experience.js";
+import Skills from "./Skills.js";
+import Contact from "./Contact.js";
+import Footer from "./Footer.js";
+import { HeadAndScripts } from "./HeadAndScripts";
 
 import { useEffect } from "react";
-import { isMobile } from "./../helpers/IsMobile";
-import { customCursor } from "./../helpers/customCursor";
+import { isMobile } from "../helpers/IsMobile";
+import { customCursor } from "../helpers/customCursor";
 
 const Landing = () => {
   useEffect(() => {
