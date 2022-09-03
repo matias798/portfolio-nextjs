@@ -14,7 +14,7 @@ export const projects = [
     subtitle:
       "Ecommerce enfocado en la venta de productos de decoración realizado de forma conjunta en Digital House",
     image:
-      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/Glamira_pzzf6u_woe7ga.webp",
+      "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146269/portfolio/ramedeco_zij851_otyuan.webp",
     color: "#e6daed",
     link: "https://ramedeco.herokuapp.com/",
   },
