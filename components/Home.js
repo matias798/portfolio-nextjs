@@ -2,24 +2,27 @@
 import { Button } from "react-bootstrap";
 import Image from "next/image";
 import arrow from "../assets/Icons/arrow-down.svg";
+import { useTranslation } from "react-i18next";
 
 // Styles
 import Styles from "./../styles/Home.module.css";
 import { SocialInfo } from "./SocialInfo";
 
 const Home = () => {
+
+  const { t } = useTranslation("global");
   return (
     <div id="Home">
       <div className={`${Styles.HomeContainer}`}>
         {/* Left */}
         <div className={Styles.Left}>
           {/* title */}
-          <h1 className={Styles.Title}> Desarrollador Web Independiente </h1>
+          <h1 className={Styles.Title}>{t("Home.Title")}</h1>
           <hr className={Styles.Hr} />
           <div className={Styles.ButtonContainer}>
             <a href="/cv-matiasquiroga.pdf" download="cv-MatiasQuiroga">
               <Button variant="primary" className={Styles.Button}>
-                Descargar cv
+                {t("Home.ButtonText")}
               </Button>
             </a>
           </div>
@@ -31,10 +34,9 @@ const Home = () => {
               className={`d-flex justify-content-center flex-wrap animate__animated animate__fadeInUp text-center`}
             >
               <span className={`${Styles.SubtitleMobile} `}>
-                <p>Hola 👋</p>
+                <p>{t("Home.Salute")} 👋</p>
                 <p>
-                  Soy un Desarrollador Web Full Stack en busca de nuevas
-                  oportunidades laborales.
+                {t("Home.Subtitle")}
                 </p>
                 <SocialInfo />
               </span>

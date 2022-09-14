@@ -4,8 +4,12 @@ import Image from "next/image";
 // Styles
 import Styles from "./../styles/About.module.css";
 import { isMobile } from "../helpers/IsMobile";
+import { useTranslation } from "react-i18next";
+
 
 const About = () => {
+  const { t } = useTranslation("global");
+
   return (
     <div className={Styles.about}>
       <div className={Styles.AboutContainer}>
@@ -24,25 +28,9 @@ const About = () => {
 
         <div className={Styles.aboutMeText}>
           {/* title */}
-          <h2 className={Styles.Title}>Sobre mi</h2>
+          <h2 className={Styles.Title}> {t("About.Title")}</h2>
           <span className={Styles.Text}>
-            {isMobile ? (
-              <p>
-                Me considero una persona proactiva y responsable. Valoro el buen
-                ambiente laboral y el aprendizaje diario junto con el resto del
-                equipo. Presento un gran interés de seguir aprendiendo nuevas
-                habilidades y tecnologías para mi desarrollo profesional.
-              </p>
-            ) : (
-              <p>
-                ¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full
-                Stack (MERN) en busca de nuevas oportunidades laborales.  Me
-                considero una persona proactiva y responsable. Valoro el buen
-                ambiente laboral y el aprendizaje diario junto con el resto del
-                equipo. Presento un gran interés de seguir aprendiendo nuevas
-                habilidades y tecnologías para mi desarrollo profesional.
-              </p>
-            )}
+            {isMobile ? <p>{t("About.SubtitleMobile")}</p> : <p>{t("About.SubtitlePc")}</p>}
           </span>
         </div>
       </div>
