@@ -1,0 +1,13 @@
+{
+    "Home": {
+        "Title": "Desarrollador Web Independiente",
+        "ButtonText": "Descargar cv",
+        "Salute": "Hola",
+        "Subtitle": "Soy un Desarrollador Web Full Stack en busca de nuevas oportunidades laborales."
+    },
+    "About": {
+        "Title": "Sobre mi",
+        "SubtitlePc": "Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir aprendiendo nuevas habilidades y tecnologías para mi desarrollo profesional.",
+        "SubtitleMobile": "¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full Stack (MERN) en busca de nuevas oportunidades laborales.  Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir aprendiendo nuevas habilidades y tecnologías para mi desarrollo profesional."
+    }
+}
