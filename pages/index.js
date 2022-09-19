@@ -1,25 +1,12 @@
-//  Components
-import Landing from "./../components/Landing.js";
-import Loading from "./../components/Loading.js";
+// Modules
+import { I18nextProvider } from "react-i18next";
 import { useEffect, useState } from "react";
-import { I18nextProvider } from 'react-i18next';
 import i18next from "i18next";
 
-import global_en from "./../Translations/en/global.json";
-import global_es from "./../Translations/es/global.json";
-
-i18next.init({
-  interpolation: { escapeValue: false },
-  lng: "es",
-  resources: {
-    en: {
-      global: global_en,
-    },
-    es: {
-      global: global_es,
-    },
-  },
-});
+//  Components
+import { LanguageCongfig } from "./../Translations/LanguageConfig.js";
+import Landing from "./../components/Landing.js";
+import Loading from "./../components/Loading.js";
 
 export default function Index() {
   const [loading, setLoading] = useState(true);
@@ -32,11 +19,11 @@ export default function Index() {
 
   if (loading) {
     return <Loading />;
-  } else {
-    return (
-      <I18nextProvider i18n={i18next}>
-        <Landing />
-      </I18nextProvider>
-    );
   }
+  return (
+    <I18nextProvider i18n={i18next}>
+      <LanguageCongfig />
+      <Landing />
+    </I18nextProvider>
+  );
 }
