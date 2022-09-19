@@ -9,7 +9,6 @@ import Styles from "./../styles/Home.module.css";
 import { SocialInfo } from "./SocialInfo";
 
 const Home = () => {
-
   const { t } = useTranslation("global");
   return (
     <div id="Home">
@@ -35,9 +34,7 @@ const Home = () => {
             >
               <span className={`${Styles.SubtitleMobile} `}>
                 <p>{t("Home.Salute")} 👋</p>
-                <p>
-                {t("Home.Subtitle")}
-                </p>
+                <p>{t("Home.Subtitle")}</p>
                 <SocialInfo />
               </span>
               <div className="animate__animated animate__repeat-3	animate__heartBeat d-block w-100">
