@@ -9,5 +9,36 @@
         "Title": "Sobre mi",
         "SubtitlePc": "Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir aprendiendo nuevas habilidades y tecnologías para mi desarrollo profesional.",
         "SubtitleMobile": "¡Hola! Me llamo Matías Quiroga, soy un Desarrollador Web Full Stack (MERN) en busca de nuevas oportunidades laborales.  Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir aprendiendo nuevas habilidades y tecnologías para mi desarrollo profesional."
+    },
+    "Portfolio": {
+        "Title": "Portafolio"
+    },
+    "Experience": {
+        "Title": "Experiencia"
+    },
+    "Skills": {
+        "Title": "Conocimientos",
+        "Design": "Diseño",
+        "Fundaments": "Fundamentos en UX & UI ",
+        "Navegation": "Navegación",
+        "Typography": "Typografia"
+    },
+    "Contact": {
+        "Title": "¿Necesitas una página web?",
+        "Call": "LLamame",
+        "email": "Enviame un mail",
+        "Copy": "¡Copiado!",
+        "CopiedText": "Se ha copiado el numero a tu portapapeles",
+        "EmailText": "Gracias por contactarme, me pondré en contacto contigo a la brevedad."
+    },
+    "Footer": {
+        "Text": "DISEÑADO UTILIZANDO FIGMA & NEXT.JS"
+    },
+    "Navbar": {
+        "Home": "Inicio",
+        "Portfolio": "Portafolio",
+        "Skills": "Conocimientos",
+        "Experience": "Experiencia",
+        "Contact": "Contacto"
     }
 }
