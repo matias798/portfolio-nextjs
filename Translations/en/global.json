@@ -1,5 +1,44 @@
 {
     "Home": {
-        "Title": "eok"
+        "Title": "Freelance Web Developer",
+        "ButtonText": "Download cv",
+        "Salute": "Hi",
+        "Subtitle": "Full Stack Web Developer looking for new job opportunities."
+    },
+    "About": {
+        "Title": "About me",
+        "SubtitlePc": "Me considero una persona proactiva y responsable. Valoro el buen ambiente laboral y el aprendizaje diario junto con el resto del equipo. Presento un gran interés de seguir aprendiendo nuevas habilidades y tecnologías para mi desarrollo profesional.",
+        "SubtitleMobile": "Hello! My name is Matías Quiroga, I am a Full Stack Web Developer(MERN) looking for new job opportunities. I consider myself a proactive and responsible person. I value the good work environment and daily learning with the rest of the team.I have interest in learning new skills and technologies for my professional development."
+    },
+    "Portfolio": {
+        "Title": "Portfolio"
+    },
+    "Experience": {
+        "Title": "Experience"
+    },
+    "Skills": {
+        "Title": "Skills",
+        "Design": "Design",
+        "Fundaments": "UX & UI Fundaments ",
+        "Navegation": "Navegation",
+        "Typography": "Typography"
+    },
+    "Contact": {
+        "Title": "Need a High-Performing Website?",
+        "Call": "Book a free call",
+        "email": "Send me an email",
+        "Copy": "Copied!",
+        "CopiedText": "Copied to clipboard",
+        "EmailText": "Email sent"
+    },
+    "Footer": {
+        "Text": "DESIGNED USING FIGMA & NEXT.JS"
+    },
+    "Navbar": {
+        "Home": "Home",
+        "Portfolio": "Portfolio",
+        "Skills": "Skills",
+        "Experience": "Experience",
+        "Contact": "Contact"
     }
 }
