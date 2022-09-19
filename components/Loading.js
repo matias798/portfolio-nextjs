@@ -1,6 +1,8 @@
 // Modules
 import { useEffect } from "react";
 import anime from "../node_modules/animejs/lib/anime.es.js";
+import { useRouter } from "next/router.js";
+
 // Styles
 import Styles from "./../styles/Loading.module.css";
 
@@ -46,10 +48,9 @@ const LoadingComponent = () => {
       delay: (el, i) => 1250 + 30 * i,
     });
   }, []);
-
   return (
     <div className={Styles.Bg}>
-      <span  >
+      <span>
         <div className={Styles.logo}>
           <svg
             width="275"
@@ -97,10 +98,13 @@ const LoadingComponent = () => {
             </g>
           </svg>
         </div>
-        <h1 className={`${Styles.Title} move mt-2`}>Matías  Quiroga</h1>
-        <h1 className={`${Styles.Title} move2`}> Desarrollador Web</h1>
+        <h1 className={`${Styles.Title} move mt-2`}>Matías Quiroga</h1>
+        <h1 className={`${Styles.Title} move2`}>
+          {useRouter().locale === "es" ? "Desarrollador Web" : "Web developer"}{" "}
+        </h1>
       </span>
     </div>
   );
 };
+
 export default LoadingComponent;
