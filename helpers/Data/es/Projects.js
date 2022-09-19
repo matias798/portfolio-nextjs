@@ -1,4 +1,4 @@
-export const projects = [
+export const projectsEs = [
   {
     title: "Glamira",
     subtitle:
@@ -21,7 +21,7 @@ export const projects = [
   {
     title: "Cobranzas Argentina",
     subtitle:
-      "Sistema el cual utilizando un archivo csv con los datos de los clientes se envia un mensaje y un pdf predefinido.",
+      "Sistema el cual utilizando un archivo csv con los datos de los clientes se envia un mensaje y un pdf predefinido via whatsapp.",
     color: "#F2EEFF",
     image:
       "https://res.cloudinary.com/dsoeo0zhi/image/upload/v1662146277/portfolio/Cobranzas_cjpbyf_qigvp7.webp",
