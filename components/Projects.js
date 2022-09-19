@@ -4,19 +4,26 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import "swiper/css";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 // Styles
 import Styles from "./../styles/Project.module.css";
 
 // Data
-import { projects } from "./../helpers/Data/Projects";
+import { projectsEs } from "./../helpers/Data/es/Projects";
+import { projectsEn } from "./../helpers/Data/en/Projects";
 import { isMobile } from "./../helpers/IsMobile";
 
 const Projects = () => {
+  const { t } = useTranslation("global");
+  const router = useRouter().locale;
+  const projects = router === "es" ? projectsEs : projectsEn;
+
   return (
     <div className={Styles.Bg} id="Portfolio">
       <div className="g-Container">
-        <h2 className="text-center m-0">Portafolio</h2>
+        <h2 className="text-center m-0">{t("Portfolio.Title")}</h2>
         <hr className="Hr" />
 
         <Swiper
@@ -35,7 +42,6 @@ const Projects = () => {
         >
           {projects.map((item) => (
             <div key={Math.random()}>
-              
               <SwiperSlide key={Math.random()} className={Styles.Item}>
                 {" "}
                 <Link href={item.link}>

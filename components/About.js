@@ -6,7 +6,6 @@ import Styles from "./../styles/About.module.css";
 import { isMobile } from "../helpers/IsMobile";
 import { useTranslation } from "react-i18next";
 
-
 const About = () => {
   const { t } = useTranslation("global");
 
@@ -30,7 +29,11 @@ const About = () => {
           {/* title */}
           <h2 className={Styles.Title}> {t("About.Title")}</h2>
           <span className={Styles.Text}>
-            {isMobile ? <p>{t("About.SubtitleMobile")}</p> : <p>{t("About.SubtitlePc")}</p>}
+            {isMobile ? (
+              <p>{t("About.SubtitleMobile")}</p>
+            ) : (
+              <p>{t("About.SubtitlePc")}</p>
+            )}
           </span>
         </div>
       </div>

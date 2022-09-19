@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 // import navbar styles
 import Styles from "./../styles/Navbar.module.css";
@@ -11,11 +12,11 @@ import Styles from "./../styles/Navbar.module.css";
 import { Logo } from "./Logo";
 
 function NavScrollExample() {
-
   const [clientWindowHeight, setClientWindowHeight] = useState("");
   const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
   const [padding, setPadding] = useState(30);
   const [boxShadow, setBoxShadow] = useState(0);
+  const { t } = useTranslation("global");
 
   const handleScroll = () => {
     setClientWindowHeight(window.scrollY);
@@ -62,7 +63,7 @@ function NavScrollExample() {
           <Nav className="justify-content-end" activeKey="/home">
             <Nav.Item>
               <Nav.Link className={Styles.navItem} href="#Home">
-                Inicio
+                {t("Navbar.Home")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -71,7 +72,7 @@ function NavScrollExample() {
                 href="#Portfolio"
                 eventKey="link-1"
               >
-                Portafolio
+                {t("Navbar.Portfolio")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -80,7 +81,7 @@ function NavScrollExample() {
                 href="#Skills"
                 eventKey="link-2"
               >
-                Conocimientos
+                {t("Navbar.Skills")}
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -89,7 +90,7 @@ function NavScrollExample() {
                 href="#Contact"
                 eventKey="link-2"
               >
-                Contacto
+                {t("Navbar.Contact")}
               </Nav.Link>
             </Nav.Item>
           </Nav>

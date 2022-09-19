@@ -1,17 +1,24 @@
 // Modules
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 
 // Styles
 import Styles from "./../styles/Experience.module.css";
 
 // Data
-import { ExperienceItems } from "./../helpers/Data/Experience";
+import { ExperienceItemsEs } from "./../helpers/Data/es/Experience";
+import { ExperienceItemsEn } from "./../helpers/Data/en/Experience";
 
 const Experience = () => {
+  const { t } = useTranslation("global");
+  const router = useRouter().locale;
+  const ExperienceItems =
+    router === "es" ? ExperienceItemsEs : ExperienceItemsEn;
   return (
     <div className="d-flex justify-content-center">
       <div className={Styles.Bg}>
-        <h2 className={Styles.Title}>Experiencia</h2>
+        <h2 className={Styles.Title}>{t("Experience.Title")}</h2>
         <div className={Styles.Container}>
           {ExperienceItems.map((item) => {
             return (

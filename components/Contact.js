@@ -3,15 +3,18 @@ import Styles from "./../styles/Contact.module.css";
 
 // Module export
 import { Button } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import Swal from "sweetalert2";
 
 const Contact = () => {
+  const { t } = useTranslation("global");
+
   const emailHandler = (e) => {
     window.open(
       "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasquiroga584@gmail.com"
     );
     Swal.fire({
-      text: "Gracias por contactarme, me pondré en contacto contigo a la brevedad.",
+      text: `${t("Contact.EmailText")}`,
       icon: "success",
       confirmButtonText: "Ok",
     });
@@ -19,7 +22,7 @@ const Contact = () => {
   return (
     <div id="Contact">
       <div className={Styles.Bg}>
-        <h2 className={Styles.Title}>¿Necesitas una página web?</h2>
+        <h2 className={Styles.Title}>{t("Contact.Title")}</h2>
 
         {/* Buttons */}
         <div className="d-flex justify-content-center">
@@ -36,12 +39,12 @@ const Contact = () => {
                 textArea.remove();
 
                 Swal.fire({
-                  title: "¡Copiado!",
-                  text: "Se ha copiado el numero a tu portapapeles",
+                  title: `${t("Contact.Copy")}`,
+                  text: `${t("Contact.CopiedText")}`,
                 });
               }}
             >
-              LLamame
+              {t("Contact.Call")}
             </span>
           </Button>
           <Button
@@ -51,7 +54,7 @@ const Contact = () => {
               emailHandler();
             }}
           >
-            <span className={Styles.ButtonText}>Enviame un mail</span>
+            <span className={Styles.ButtonText}>{t("Contact.email")} </span>
           </Button>
         </div>
       </div>

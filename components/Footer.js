@@ -1,11 +1,16 @@
 // Styles
 import Styles from "./../styles/Footer.module.css";
 
+// Modules
+import { useTranslation } from "react-i18next";
+
 //Components
 import { Logo } from "./Logo";
 import { SocialInfo } from "./SocialInfo";
 
 const Contact = () => {
+  const { t } = useTranslation("global");
+
   return (
     <div className={Styles.ContainerSize}>
       <div className={Styles.ContainerColor}>
@@ -17,7 +22,7 @@ const Contact = () => {
           <hr className={Styles.Hr} />
           <div className={Styles.FooterText}>
             <p>© ALL RIGHTS RESERVED</p>
-            <p>DISEÑADO UTILIZANDO FIGMA & NEXT.JS</p>
+            <p>{t("Footer.Text")}</p>
           </div>
         </div>
       </div>
