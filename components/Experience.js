@@ -22,7 +22,7 @@ const Experience = () => {
         <div className={Styles.Container}>
           {ExperienceItems.map((item) => {
             return (
-              <Link href={item.url} key={item.id}>
+              <Link href="" key={item.id}>
                 <a
                   className={Styles.Card}
                   target="_blank"

@@ -11,7 +11,7 @@ const Contact = () => {
 
   const emailHandler = (e) => {
     window.open(
-      "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasquiroga584@gmail.com"
+      "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasquiroga584@gmail.com",
     );
     Swal.fire({
       text: `${t("Contact.EmailText")}`,
@@ -32,7 +32,7 @@ const Contact = () => {
               onClick={() => {
                 // Copy text to clipboard
                 var textArea = document.createElement("textarea");
-                textArea.value = "3415638192";
+                textArea.value = "+61468662448";
                 document.body.appendChild(textArea);
                 textArea.select();
                 document.execCommand("copy");

@@ -44,7 +44,7 @@ const Projects = () => {
             <div key={Math.random()}>
               <SwiperSlide key={Math.random()} className={Styles.Item}>
                 {" "}
-                <Link href={item.link}>
+                <Link href="">
                   <a
                     className={Styles.Link}
                     target="_blank"
