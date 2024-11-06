@@ -19,7 +19,7 @@ const Home = () => {
           <h1 className={Styles.Title}>{t("Home.Title")}</h1>
           <hr className={Styles.Hr} />
           <div className={Styles.ButtonContainer}>
-            <a href="/cv-matiasquiroga.pdf" download="cv-MatiasQuiroga">
+            <a href="/matiasquirogaresume.pdf" download="cv-MatiasQuiroga">
               <Button variant="primary" className={Styles.Button}>
                 {t("Home.ButtonText")}
               </Button>
