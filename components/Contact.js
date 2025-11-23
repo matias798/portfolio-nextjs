@@ -32,7 +32,7 @@ const Contact = () => {
               onClick={() => {
                 // Copy text to clipboard
                 var textArea = document.createElement("textarea");
-                textArea.value = "+4557201947 |";
+                textArea.value = "+4557201947";
                 document.body.appendChild(textArea);
                 textArea.select();
                 document.execCommand("copy");
