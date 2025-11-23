@@ -17,7 +17,7 @@ export const SocialInfo = () => {
           <Image src={github} alt="Github" priority width="24" height="24" />
         </a>
       </Link>
-      <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasquiroga584@gmail.com">
+      <Link href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=matiasq.dkk@gmail.com">
         <a target="_blank" rel="noopener noreferrer" className={Styles.Icon}>
           <Image src={mail} alt="Github" priority width="24" height="24" />
         </a>
