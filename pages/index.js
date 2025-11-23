@@ -9,7 +9,7 @@ import Landing from "./../components/Landing.js";
 import Loading from "./../components/Loading.js";
 
 export default function Index() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {

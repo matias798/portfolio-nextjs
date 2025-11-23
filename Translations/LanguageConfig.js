@@ -7,23 +7,31 @@ import { useEffect } from "react";
 import global_en from "./../Translations/en/global.json";
 import global_es from "./../Translations/es/global.json";
 
+// Initialize i18next once on module load
+if (!i18next.isInitialized) {
+  i18next.init({
+    interpolation: { escapeValue: false },
+    lng: "en",
+    resources: {
+      en: {
+        global: global_en,
+      },
+      es: {
+        global: global_es,
+      },
+    },
+  });
+}
+
 export const LanguageCongfig = () => {
   const router = useRouter();
   const locale = router.locale || "en-US";
   
   useEffect(() => {
-    i18next.init({
-      interpolation: { escapeValue: false },
-      lng: locale === "en-US" ? "en" : locale,
-      resources: {
-        en: {
-          global: global_en,
-        },
-        es: {
-          global: global_es,
-        },
-      },
-    });
+    const lang = locale === "en-US" ? "en" : locale;
+    if (i18next.language !== lang) {
+      i18next.changeLanguage(lang);
+    }
   }, [locale]);
   
   return null;
