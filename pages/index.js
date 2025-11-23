@@ -15,7 +15,7 @@ export default function Index() {
     setTimeout(() => {
       setLoading(false);
     }, 2500);
-  }, [loading]);
+  }, []);
 
   if (loading) {
     return <Loading />;
